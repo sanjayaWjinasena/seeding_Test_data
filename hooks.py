@@ -31,6 +31,9 @@ _logger = logging.getLogger(__name__)
 SEED_PATH = os.path.join(
     os.path.dirname(__file__), 'data', 'accounting_scaffold_seed.json'
 )
+HELPDESK_SEED_PATH = os.path.join(
+    os.path.dirname(__file__), 'data', 'helpdesk_scaffold_seed.json'
+)
 # The source-of-truth company name (Clear-DB Company 2). We match by
 # name against the dev env's res.company so the seed lands on the
 # right legal entity regardless of ID differences.
@@ -38,26 +41,31 @@ TARGET_COMPANY_NAME = 'Jinasena Agricultural Machinery (Pvt) Ltd.'
 
 
 def seed_accounting_scaffold(env):
-    """Entry point registered as post_init_hook."""
-    if not os.path.isfile(SEED_PATH):
-        _logger.warning(
-            'seeding_test_data: seed file not found at %s -- skipping',
-            SEED_PATH,
-        )
-        return
-    with open(SEED_PATH, encoding='utf-8') as fh:
-        snapshot = json.load(fh)
+    """Entry point registered as post_init_hook.
 
+    Despite the historical name, this now also seeds helpdesk team +
+    members (see _seed_helpdesk_scaffold). Kept the original function
+    name for manifest compatibility with the v0.0.1 install.
+    """
     Company = env['res.company'].sudo()
     company = Company.search([('name', '=', TARGET_COMPANY_NAME)], limit=1)
     if not company:
         _logger.warning(
             'seeding_test_data: no res.company named %r on this env '
-            '-- skipping seed. Rename a company or edit '
-            'TARGET_COMPANY_NAME in hooks.py.',
+            '-- skipping seed.',
             TARGET_COMPANY_NAME,
         )
         return
+    if not os.path.isfile(SEED_PATH):
+        _logger.warning(
+            'seeding_test_data: accounting seed file missing at %s -- '
+            'proceeding to helpdesk-only seed',
+            SEED_PATH,
+        )
+        _seed_helpdesk_scaffold(env, company)
+        return
+    with open(SEED_PATH, encoding='utf-8') as fh:
+        snapshot = json.load(fh)
 
     existing = env['account.account'].sudo().search_count(
         [('company_id', '=', company.id)]
@@ -72,9 +80,11 @@ def seed_accounting_scaffold(env):
     if existing >= expected:
         _logger.info(
             'seeding_test_data: company %s already has %d/%d accounts '
-            '-- seed appears complete, skipping.',
+            '-- accounting seed complete, skipping to helpdesk.',
             company.name, existing, expected,
         )
+        # v0.0.4: still seed helpdesk (its own idempotency guard runs)
+        _seed_helpdesk_scaffold(env, company)
         return
     if existing:
         _logger.warning(
@@ -99,7 +109,102 @@ def seed_accounting_scaffold(env):
     _set_company_defaults(
         env, company, snapshot.get('company_defaults') or {}, code_to_account_id
     )
+    # v0.0.4: helpdesk team + members. Runs unconditionally after
+    # accounting even when accounting was skipped -- guarded from
+    # within by its own idempotency check.
+    _seed_helpdesk_scaffold(env, company)
     _logger.info('seeding_test_data: seed complete on company %s', company.name)
+
+
+def _seed_helpdesk_scaffold(env, company):
+    """v0.0.4: snapshot Clear-DB's Customer Care - Repair team config
+    (privacy=internal, use_fsm=True, use_product_returns=True, etc.)
+    + member list onto the target company's helpdesk.team.
+
+    Idempotent by team name -- updates an existing team if found,
+    creates one otherwise. Does not touch stage_ids (Fix-repair
+    owns stage seeding).
+    """
+    if not os.path.isfile(HELPDESK_SEED_PATH):
+        _logger.info(
+            'seeding_test_data: helpdesk seed file not present -- skipping'
+        )
+        return
+    if 'helpdesk.team' not in env.registry:
+        _logger.info(
+            'seeding_test_data: helpdesk module not installed -- skipping team seed'
+        )
+        return
+    with open(HELPDESK_SEED_PATH, encoding='utf-8') as fh:
+        snapshot = json.load(fh)
+
+    Team = env['helpdesk.team'].sudo()
+    Users = env['res.users'].sudo()
+    for team_row in snapshot.get('teams') or []:
+        with env.cr.savepoint():
+            try:
+                # Locate existing team on this company by name first;
+                # fall back to any team on this company if the exact
+                # name isn't present (dev-env teams may be pre-existing
+                # under a different name like plain "Customer Care").
+                target = Team.search([
+                    ('company_id', '=', company.id),
+                    ('name', '=', team_row['name']),
+                ], limit=1)
+                if not target:
+                    target = Team.search([
+                        ('company_id', '=', company.id),
+                    ], limit=1)
+                # Resolve member logins to user ids on this env.
+                member_ids = []
+                for login in team_row.get('member_logins') or []:
+                    u = Users.search([('login', '=', login)], limit=1)
+                    if u:
+                        member_ids.append(u.id)
+                # Fields safe to write on both create and update.
+                # `stage_ids` intentionally omitted -- Fix-repair owns
+                # stage seeding, and touching it here would wipe the
+                # existing wire-up.
+                writable = {
+                    'sequence', 'active', 'privacy_visibility',
+                    'auto_assignment', 'assign_method',
+                    'use_alias', 'alias_name',
+                    'use_website_helpdesk_form',
+                    'use_helpdesk_timesheet',
+                    'use_helpdesk_sale_timesheet',
+                    'use_credit_notes', 'use_product_returns',
+                    'use_product_repairs', 'use_fsm',
+                    'use_rating', 'use_sla', 'description',
+                }
+                vals = {k: v for k, v in team_row.items()
+                        if k in writable and v is not None}
+                if member_ids:
+                    vals['member_ids'] = [(6, 0, member_ids)]
+                if target:
+                    # Rename only if the existing team is a plain default.
+                    if target.name != team_row['name'] \
+                            and target.name in ('Customer Care', 'Helpdesk'):
+                        vals['name'] = team_row['name']
+                    target.write(vals)
+                    _logger.info(
+                        'seeding_test_data: updated helpdesk.team %r on %s '
+                        '(members=%d)',
+                        target.name, company.name, len(member_ids),
+                    )
+                else:
+                    vals['name'] = team_row['name']
+                    vals['company_id'] = company.id
+                    Team.create(vals)
+                    _logger.info(
+                        'seeding_test_data: created helpdesk.team %r on %s '
+                        '(members=%d)',
+                        team_row['name'], company.name, len(member_ids),
+                    )
+            except Exception as e:
+                _logger.warning(
+                    'seeding_test_data: helpdesk team %r seed failed -- %s',
+                    team_row.get('name'), e,
+                )
 
 
 def _reset_partial_seed(env, company):

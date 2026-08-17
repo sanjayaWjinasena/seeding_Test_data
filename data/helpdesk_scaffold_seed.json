@@ -1,0 +1,29 @@
+{
+  "source_company": "Jinasena Agricultural Machinery (Pvt) Ltd.",
+  "teams": [
+    {
+      "clear_db_id": 3,
+      "name": "Customer Care - Repair",
+      "sequence": 10,
+      "active": true,
+      "privacy_visibility": "internal",
+      "auto_assignment": false,
+      "assign_method": "randomly",
+      "use_alias": true,
+      "alias_name": "customer-care-repair",
+      "use_website_helpdesk_form": false,
+      "use_helpdesk_timesheet": false,
+      "use_helpdesk_sale_timesheet": false,
+      "use_credit_notes": false,
+      "use_product_returns": true,
+      "use_product_repairs": false,
+      "use_fsm": true,
+      "use_rating": false,
+      "use_sla": true,
+      "description": "<p><br></p>",
+      "member_logins": [
+        "kapila.h@jinasena.com.lk"
+      ]
+    }
+  ]
+}

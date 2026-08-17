@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Seeding - Test Data',
-    'version': '17.0.0.0.3',
+    'version': '17.0.0.0.4',
+    'depends': ['account', 'sale', 'stock', 'helpdesk'],
     'summary': (
         'Seeds minimum accounting scaffold from Clear-DB reference '
         'onto the dev env so Repair automations can be tested E2E'
@@ -9,7 +10,6 @@
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Accounting',
     'license': 'LGPL-3',
-    'depends': ['account', 'sale', 'stock'],
     'data': [
         'security/ir.model.access.csv',
     ],
