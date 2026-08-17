@@ -1,0 +1,4285 @@
+{
+  "source_company": "Jinasena Agricultural Machinery (Pvt) Ltd.",
+  "source_currency_code": "LKR",
+  "accounts": [
+    {
+      "id": 4538,
+      "name": "12345",
+      "code": "00000001",
+      "account_type": "asset_cash",
+      "reconcile": false,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4539,
+      "name": "Customer Receipts - Cash",
+      "code": "00000002",
+      "account_type": "asset_cash",
+      "reconcile": false,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4299,
+      "name": "LAND",
+      "code": "11010010",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4300,
+      "name": "BUILDING",
+      "code": "11010030",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4301,
+      "name": "PLANT AND MACHINERY",
+      "code": "11010050",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4302,
+      "name": "FURNITURE",
+      "code": "11010070",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4303,
+      "name": "FIXTURES & FITTINGS",
+      "code": "11010090",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4304,
+      "name": "OFFICE EQUIPMENT",
+      "code": "11010110",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4305,
+      "name": "TOOLS",
+      "code": "11010130",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4306,
+      "name": "PATTERN & DESIGN",
+      "code": "11010150",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4307,
+      "name": "FACTORY EQUIPMENT",
+      "code": "11010170",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4308,
+      "name": "DEMONSTRATION MACHINERY",
+      "code": "11010190",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4529,
+      "name": "MOTOR VEHICLES",
+      "code": "11010210",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4530,
+      "name": "MOTOR VEHICLES - LEASE HOLD",
+      "code": "11010230",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4309,
+      "name": "PROVISION FOR DEPRECIATION - BUILDINGS",
+      "code": "11020030",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4310,
+      "name": "PROVISION FOR DEPRECIATION - PLANT & MACHINERY",
+      "code": "11020050",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4311,
+      "name": "PROVISION FOR DEPRECIATION - FURNITURE",
+      "code": "11020070",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4312,
+      "name": "PROVISION FOR DEPRECIATION - FIXTURES & FITTINGS",
+      "code": "11020090",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4313,
+      "name": "PROVISION FOR DEPRECIATION - OFFICE EQUIPMENT",
+      "code": "11020110",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4314,
+      "name": "PROVISION FOR DEPRECIATION - TOOLS",
+      "code": "11020130",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4315,
+      "name": "PROVISION FOR DEPRECIATION - PATTERN & DESIGN",
+      "code": "11020150",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4316,
+      "name": "PROVISION FOR DEPRECIATION - FACTORY EQUIPMENT",
+      "code": "11020170",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4317,
+      "name": "PROVISION FOR DEPRECIATION - DEMONSTRATION MACHINERY",
+      "code": "11020190",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4531,
+      "name": "PROVISION FOR DEPRECIATION - MOTOR VEHICLES",
+      "code": "11020210",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4532,
+      "name": "PROVISION FOR DEPRECIATION - LEASEHOLD  MOTOR VEHICLES",
+      "code": "11020230",
+      "account_type": "asset_fixed",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4318,
+      "name": "INVENTORY - RAW MATERIALS",
+      "code": "12010010",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4319,
+      "name": "INVENTORY - RAW MATERIALS INTERIM (RECEIVED)",
+      "code": "12010011",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4320,
+      "name": "INVENTORY - RAW MATERIALS INTERIM (DELIVERED)",
+      "code": "12010012",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4321,
+      "name": "INVENTORY - W I P",
+      "code": "12010030",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4322,
+      "name": "INVENTORY - W I P INTERIM (RECEIVED)",
+      "code": "12010031",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4323,
+      "name": "INVENTORY - W I P INTERIM (DELIVERED)",
+      "code": "12010032",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4324,
+      "name": "INVENTORY - FINISHED GOODS",
+      "code": "12010050",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4325,
+      "name": "INVENTORY - FINISHED GOODS INTERIM (RECEIVED)",
+      "code": "12010051",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4326,
+      "name": "INVENTORY - FINISHED GOODS INTERIM (DELIVERED)",
+      "code": "12010052",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4327,
+      "name": "INVENTORY - TOOLS",
+      "code": "12010070",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4329,
+      "name": "INVENTORY - FINISH GOODS OVERHEADS",
+      "code": "12010110",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4330,
+      "name": "INVENTORY - WIP - ASSETS",
+      "code": "12010130",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4331,
+      "name": "INVENTORY - STATIONERY",
+      "code": "12010150",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4332,
+      "name": "PROVISION FOR INVENTORY LOCAL",
+      "code": "12010170",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4333,
+      "name": "PROVISION FOR OBSOLETE INVENTORY",
+      "code": "12010190",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4334,
+      "name": "GOODS IN TRANSIT",
+      "code": "12010210",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4524,
+      "name": "INVENTORY SHORTAGE/EXCESS",
+      "code": "12010230",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4328,
+      "name": "INVENTORY - NON STOCK ITEMS",
+      "code": "12010900",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4335,
+      "name": "DEBTORS LEDGER CONTROL - TRADE",
+      "code": "12020010",
+      "account_type": "asset_receivable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4336,
+      "name": "CREDITORS CONTROL - SUSPENSE",
+      "code": "12020030",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4337,
+      "name": "PROVISION FOR BAD DEBTS",
+      "code": "12020050",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4338,
+      "name": "STAFF LEDGER CONTROL -  SALARY ADVANCES",
+      "code": "12030010",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4339,
+      "name": "STAFF LEDGER CONTROL - OTHER DEDUCTIONS",
+      "code": "12030030",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4340,
+      "name": "STAFF LEDGER CONTROL - STANDING ORDER",
+      "code": "12030050",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4341,
+      "name": "STAFF LEDGER CONTROL - CONTRIBUTION",
+      "code": "12030070",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4342,
+      "name": "STAFF LEDGER CONTROL - FUNERAL FUND",
+      "code": "12030090",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4343,
+      "name": "STAFF LEDGER CONTROL - EMPLOYEE LOANS",
+      "code": "12030110",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4344,
+      "name": "STAFF LEDGER CONTROL - FESTIVAL ADVANCE",
+      "code": "12030130",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4345,
+      "name": "INSURANCE CLAIMS",
+      "code": "12030150",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4346,
+      "name": "STAFF LEDGER CONTROL - UNCLAIMED SALARIES & WAGES",
+      "code": "12030170",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4347,
+      "name": "BANK GUARANTEES",
+      "code": "12030190",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4348,
+      "name": "ADVANCE PAYMENTS PENDING FINAL DOCUMENTS",
+      "code": "12030210",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4349,
+      "name": "ADVANCES - TRACTOR REGISTRATION",
+      "code": "12030230",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4350,
+      "name": "STOCK SHORTAGE-2020-2021(SALES CENTERS)",
+      "code": "12030250",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4351,
+      "name": "STOCK SHORTAGE-2020-2021(THAMBUTTEGAMA)",
+      "code": "12030270",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4352,
+      "name": "STOCK SHORTAGE-2021-2022(SALES CENTERS)",
+      "code": "12030280",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4353,
+      "name": "IMPORTS MARGIN",
+      "code": "12030290",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4354,
+      "name": "DEBTORS LEDGER CONTROL - INTER COMPANIES",
+      "code": "12040010",
+      "account_type": "asset_receivable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4355,
+      "name": "PRE-PAYMENTS (DEFERRED EXPENCE)",
+      "code": "12060010",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4356,
+      "name": "GENERAL DEPOSITE",
+      "code": "12060030",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4523,
+      "name": "DEBTORS LEDGER CONTROL - OTHER COMPANIES",
+      "code": "12060050",
+      "account_type": "asset_receivable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4357,
+      "name": "COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN",
+      "code": "12090030",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4358,
+      "name": "COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-RECEIPT",
+      "code": "12090031",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4359,
+      "name": "COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-PAYMENT",
+      "code": "12090032",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4360,
+      "name": "BANK OF CEYLON -CORPORATE BRANCH - MAIN",
+      "code": "12090050",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4361,
+      "name": "BANK OF CEYLON - CORPORATE BRANCH - RECEIPT",
+      "code": "12090051",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4362,
+      "name": "BANK OF CEYLON - CORPORATE BRANCH - PAYMENT",
+      "code": "12090052",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4363,
+      "name": "BANK SUSPENSE",
+      "code": "12090250",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4364,
+      "name": "OUTSTANDING RECEIPTS",
+      "code": "12090251",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4365,
+      "name": "OUTSTANDING PAYMENTS",
+      "code": "12090252",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4366,
+      "name": "LIQUIDITY TRANSFER",
+      "code": "12090253",
+      "account_type": "asset_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4367,
+      "name": "CHEQUES IN HAND",
+      "code": "12090270",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4368,
+      "name": "CASH IN HAND - SALES CENTRES",
+      "code": "12090290",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4369,
+      "name": "CHEQUES IN HAND - SALES CENTRES",
+      "code": "12090310",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4370,
+      "name": "CASH FLOATS",
+      "code": "12090330",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4371,
+      "name": "CASH IN HAND",
+      "code": "12090350",
+      "account_type": "asset_cash",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4542,
+      "name": "ROHANA BANK",
+      "code": "123456",
+      "account_type": "asset_cash",
+      "reconcile": false,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4372,
+      "name": "PROVISION FOR GRATUITY",
+      "code": "21010010",
+      "account_type": "liability_non_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4373,
+      "name": "DEFERRED TAX LIABILITY",
+      "code": "21020010",
+      "account_type": "liability_non_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4533,
+      "name": "LEASE LIABILITY CBN 3660",
+      "code": "21050010",
+      "account_type": "liability_non_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4534,
+      "name": "INTEREST IN SUSPENSE CBN 3660",
+      "code": "21050030",
+      "account_type": "liability_non_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4374,
+      "name": "CREDITORS CONTROL - TRADE",
+      "code": "22010010",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4375,
+      "name": "CREDITORS CONTROL - IMPORTS",
+      "code": "22010030",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4376,
+      "name": "UNIDENTIFIED BANK CREDITS",
+      "code": "22020030",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4377,
+      "name": "EPF - PAYABLE",
+      "code": "22020050",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4378,
+      "name": "ETF - PAYABLE",
+      "code": "22020070",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4379,
+      "name": "SALARIES - PAYABLE",
+      "code": "22020090",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4380,
+      "name": "WAGES -PAYABLE",
+      "code": "22020110",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4381,
+      "name": "UNPAID SALARIES AND WAGES",
+      "code": "22020130",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4382,
+      "name": "ACCRUED EXPENSES",
+      "code": "22020150",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4383,
+      "name": "DEFERRED REVENUE",
+      "code": "22020160",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4384,
+      "name": "SALES - ADVANCES",
+      "code": "22020170",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4385,
+      "name": "INTERIM A/C FOR EXPENSES - CUSTOMS DUTY",
+      "code": "22020190",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4386,
+      "name": "INTERIM A/C FOR EXPENSES - CUSTOMS VAT",
+      "code": "22020210",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4387,
+      "name": "INTERIM A/C FOR EXPENSES - CUSTOMS OTHER CHARGES",
+      "code": "22020230",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4388,
+      "name": "INTERIM A/C FOR EXPENSES - CLEARING CHARGES",
+      "code": "22020250",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4389,
+      "name": "INTERIM A/C FOR EXPENSES - CUSTOMS NBT",
+      "code": "22020270",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4390,
+      "name": "INTERIM LIABILITY - IMPORT VENDORS",
+      "code": "22020290",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4391,
+      "name": "INTERIM LIABILITY - LOCAL  VENDORS",
+      "code": "22020310",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4392,
+      "name": "INTERIM LIABILITY - IMPORT TP  VENDORS",
+      "code": "22020330",
+      "account_type": "liability_current",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4393,
+      "name": "SALES INCENTIVE PAYABLE",
+      "code": "22020350",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4394,
+      "name": "TRUST RECEIPT LOAN",
+      "code": "22020370",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4395,
+      "name": "CREDITORS CONTROL - COMMISSION",
+      "code": "22020390",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4396,
+      "name": "CREDITOR CONTROL - EMPLOYEE",
+      "code": "22020410",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4397,
+      "name": "VAT PAYABLE",
+      "code": "22050010",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4398,
+      "name": "STAMP DUTY PAYABLE",
+      "code": "22050030",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4399,
+      "name": "WITH HOLDING TAX PAYABLE",
+      "code": "22050050",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4400,
+      "name": "PAYE PAYABLE",
+      "code": "22050070",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4401,
+      "name": "PROVISION FOR TAXATION",
+      "code": "22050090",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4525,
+      "name": "SSCL PAYABLE",
+      "code": "22050110",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4402,
+      "name": "CREDITORS CONTROL - INTER COMPANY",
+      "code": "22070010",
+      "account_type": "liability_payable",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4403,
+      "name": "ISSUED SHARE CAPITAL",
+      "code": "31010010",
+      "account_type": "equity",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4404,
+      "name": "RETAINED PROFIT",
+      "code": "31020010",
+      "account_type": "equity",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4405,
+      "name": "OTHER COMPREHENSIVE INCOME",
+      "code": "31020030",
+      "account_type": "equity",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4527,
+      "name": "OPENING BALANCE SUSPENSE",
+      "code": "31090010",
+      "account_type": "equity",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4406,
+      "name": "SALES",
+      "code": "41010010",
+      "account_type": "income",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4407,
+      "name": "SALES - SPECIAL PROJECTS",
+      "code": "41010030",
+      "account_type": "income",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4408,
+      "name": "SERVICE INCOME",
+      "code": "41010050",
+      "account_type": "income",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4409,
+      "name": "SUNDRY INCOME",
+      "code": "41010070",
+      "account_type": "income",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4410,
+      "name": "SALES DISCOUNTS",
+      "code": "41010090",
+      "account_type": "income",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4411,
+      "name": "COST OF GOODS SOLD",
+      "code": "51010010",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4412,
+      "name": "SCRAP ISSUES",
+      "code": "51010030",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4413,
+      "name": "CONSUMABLES",
+      "code": "51010050",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4414,
+      "name": "SERVICE & OUTSOURCE CHARGES",
+      "code": "51010070",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4415,
+      "name": "GENERAL ISSUES - PRODUCTION",
+      "code": "51010090",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4416,
+      "name": "GENERAL ISSUES & SERVICES - REPAIRS",
+      "code": "51010110",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4417,
+      "name": "WORKERS - WAGES",
+      "code": "51020010",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4418,
+      "name": "WORKERS - E.P.F.",
+      "code": "51020030",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4419,
+      "name": "WORKERS - E.T.F.",
+      "code": "51020050",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4420,
+      "name": "WORKERS - EXGRATIA",
+      "code": "51020070",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4421,
+      "name": "WORKERS - OVERTIME",
+      "code": "51020090",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4422,
+      "name": "WORKERS - BONUS",
+      "code": "51020110",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4423,
+      "name": "WORKERS - GRATUITY",
+      "code": "51020130",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4424,
+      "name": "WORKERS - MEDICAL",
+      "code": "51020150",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4425,
+      "name": "WORKERS - CASUAL WAGES",
+      "code": "51020170",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4426,
+      "name": "WORKERS - WELFARE EXPENSES",
+      "code": "51020190",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4427,
+      "name": "WORKERS - COMPANSATION INSURANCE",
+      "code": "51020210",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4428,
+      "name": "WORKERS - TRAINING",
+      "code": "51020230",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4429,
+      "name": "WORKERS - CONTRACT LABOUR",
+      "code": "51020250",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4430,
+      "name": "WORKERS - TRAVELLING",
+      "code": "51020270",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4431,
+      "name": "DEPRECIATION - BUILDING",
+      "code": "51030010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4432,
+      "name": "DEPRECIATION - PLANT AND MACHINARY",
+      "code": "51030030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4433,
+      "name": "DEPRECIATION - TOOLS",
+      "code": "51030050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4434,
+      "name": "DEPRECIATION - PATTERN & DESIGN",
+      "code": "51030070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4435,
+      "name": "DEPRECIATION - FACTORY EQUIPMENT",
+      "code": "51030090",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4436,
+      "name": "MAINTENANCE - TOOLS",
+      "code": "51040010",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4437,
+      "name": "MAINTENANCE - FACTORY",
+      "code": "51040030",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4438,
+      "name": "MAINTENANCE - PLANT AND MACHINARY",
+      "code": "51040050",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4439,
+      "name": "MAINTENANCE - PATTERN & DESIGN",
+      "code": "51040070",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4440,
+      "name": "MAINTENANCE - FACTORY EQUIPMENT",
+      "code": "51040090",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4441,
+      "name": "MAINTENANCE - FACTORY BUILDING",
+      "code": "51040110",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4442,
+      "name": "ELECTRICITY",
+      "code": "51050010",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4443,
+      "name": "EXPENSES - WATER & SEWERAGE CHARGES",
+      "code": "51050030",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4444,
+      "name": "EXPENSES - RATES AND TAXES",
+      "code": "51050050",
+      "account_type": "expense_direct_cost",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4445,
+      "name": "FOREIGN EXCHANGE GAIN",
+      "code": "61010010",
+      "account_type": "income_other",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4446,
+      "name": "INVENTORY PROFIT",
+      "code": "61010030",
+      "account_type": "income_other",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4447,
+      "name": "SALES COMMISION",
+      "code": "71010010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4448,
+      "name": "SALES PROMOTION",
+      "code": "71010030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4449,
+      "name": "ADVERTISING - GENERAL",
+      "code": "71010050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4450,
+      "name": "EXPENSES - TRANSPORT",
+      "code": "71010070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4451,
+      "name": "DIRECTORS' FEES",
+      "code": "72010010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4452,
+      "name": "STAFF - SALARIES",
+      "code": "72020010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4453,
+      "name": "STAFF - E.P.F.",
+      "code": "72020030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4454,
+      "name": "STAFF - E.T.F.",
+      "code": "72020050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4455,
+      "name": "STAFF - EX-GRATIA",
+      "code": "72020070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4456,
+      "name": "STAFF - CASUAL SALARIES",
+      "code": "72020090",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4457,
+      "name": "STAFF - BONUS",
+      "code": "72020110",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4458,
+      "name": "STAFF - GRATUITY",
+      "code": "72020130",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4459,
+      "name": "STAFF - INSURANCE",
+      "code": "72020150",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4460,
+      "name": "STAFF - TRAINING",
+      "code": "72020170",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4461,
+      "name": "STAFF - WELFARE EXPENSES",
+      "code": "72020190",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4462,
+      "name": "STAFF - MEDICAL",
+      "code": "72020210",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4463,
+      "name": "STAFF - PENSION",
+      "code": "72020230",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4464,
+      "name": "STAFF - OVERTIME",
+      "code": "72020250",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4465,
+      "name": "STAFF - TRAVELLING",
+      "code": "72020270",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4466,
+      "name": "CENTRE EXPENSES",
+      "code": "72030010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4467,
+      "name": "SCRAP ISSUES",
+      "code": "72030020",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4468,
+      "name": "COST OF IMPORTED SAMPLES",
+      "code": "72030030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4469,
+      "name": "EXPENSES - PRODUCT MODIFICATIONS & REPAIRS",
+      "code": "72030050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4470,
+      "name": "EXPENSES - GENERATOR RUNNING",
+      "code": "72030070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4471,
+      "name": "EXPENSES - R. & D.",
+      "code": "72030090",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4472,
+      "name": "BANK CHARGES",
+      "code": "72030110",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4473,
+      "name": "GENERAL INSURANCE",
+      "code": "72030130",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4474,
+      "name": "GENERAL MEDICAL",
+      "code": "72030150",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4475,
+      "name": "LICENCE FEES",
+      "code": "72030170",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4476,
+      "name": "OFFICE EXPENSES",
+      "code": "72030190",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4477,
+      "name": "RENT",
+      "code": "72030210",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4478,
+      "name": "SECURITY",
+      "code": "72030230",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4479,
+      "name": "TELEPHONE",
+      "code": "72030250",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4480,
+      "name": "TELEX,. INTERNET, EMAIL",
+      "code": "72030270",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4481,
+      "name": "LOCAL TRAVELLING & BATA",
+      "code": "72030290",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4482,
+      "name": "POSTAG AND TELEGRAMS",
+      "code": "72030310",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4483,
+      "name": "STATIONERY",
+      "code": "72030330",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4484,
+      "name": "ROYALTY",
+      "code": "72030350",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4485,
+      "name": "DISPOSAL OF ASSETS",
+      "code": "72030370",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4486,
+      "name": "INVOICE ROUNDING OFF",
+      "code": "72030390",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4487,
+      "name": "INVENTORY LOSS",
+      "code": "72030410",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4488,
+      "name": "EXPENSES - GENERAL",
+      "code": "72030430",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4489,
+      "name": "STAMP DUTY",
+      "code": "72030450",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4490,
+      "name": "CHARITY & DONATION",
+      "code": "72030470",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4491,
+      "name": "DEMONSTRATION EXPENSES",
+      "code": "72030490",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4492,
+      "name": "INVENTORY - SLOW MOVING",
+      "code": "72030510",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4493,
+      "name": "TAX WRITTEN OFF",
+      "code": "72030530",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4494,
+      "name": "LEGAL EXPENSES",
+      "code": "72030550",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4495,
+      "name": "BAD DEBTS",
+      "code": "72030570",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4496,
+      "name": "EXPENSES - VEHICLE HIRING",
+      "code": "72030590",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4497,
+      "name": "MISCELLANEOUS WRITE OFF",
+      "code": "72030610",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4498,
+      "name": "DEFEERRED TAX EXPENSES",
+      "code": "72030630",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4499,
+      "name": "NATION BUILDING TAX",
+      "code": "72030650",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4500,
+      "name": "AUDIT FEES",
+      "code": "72030670",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4501,
+      "name": "PROJECTS ACCRUED INCOME",
+      "code": "72030690",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4502,
+      "name": "REPAIRS - TRACTORS",
+      "code": "72030710",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4503,
+      "name": "REPAIRS - THRESHERS",
+      "code": "72030730",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4504,
+      "name": "REPAIRS - MACHINES",
+      "code": "72030750",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4505,
+      "name": "PROFIT & LOSS APPROPRIATION",
+      "code": "72030770",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4506,
+      "name": "EXPENSES - NEW PRODUCTS & SERVICES",
+      "code": "72030790",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4507,
+      "name": "MATERIAL CONSUMPTION - PROJECTS",
+      "code": "72030810",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4508,
+      "name": "VALUE ADDED TAX",
+      "code": "72030830",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4526,
+      "name": "SOCIAL RESPONSIBILITY LEVY",
+      "code": "72030850",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4509,
+      "name": "PROFESSIONAL & MANAGEMENT FEE",
+      "code": "72040010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4510,
+      "name": "R.U.G. - REPAIRS UNDER GUARANTEE",
+      "code": "72050010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4511,
+      "name": "MAINTENANCE - OFICE EQUIPMENT",
+      "code": "72080010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4512,
+      "name": "MAINTENANCE - FIXTURES & FITTINGS",
+      "code": "72080030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4513,
+      "name": "MAINTENANCE - FURNITURE",
+      "code": "72080050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4514,
+      "name": "MAINTENANCE - DIMO MACHINARY",
+      "code": "72080070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4515,
+      "name": "DEPRECIATION - FIXTURES AND FITTINGS",
+      "code": "72090010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4516,
+      "name": "DEPRECIATION - FURNITURE",
+      "code": "72090030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4517,
+      "name": "DEPRECIATION - OFFICE EQUIPMENT",
+      "code": "72090050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4518,
+      "name": "DEPRECIATION - DEMONSTRATION MACHINERY",
+      "code": "72090070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4536,
+      "name": "DEPRECIATION - LEASEHOLD  MOTOR VEHICLES",
+      "code": "72090090",
+      "account_type": "expense_depreciation",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4519,
+      "name": "INTEREST - OVERDRAFT",
+      "code": "81010010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4520,
+      "name": "INTEREST - TRUST RECEIPT LOANS",
+      "code": "81010030",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4521,
+      "name": "FOREIGN EXCHANGE LOSS",
+      "code": "81010050",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4537,
+      "name": "INTEREST - LEASE",
+      "code": "81010070",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 4522,
+      "name": "INCOME TAX",
+      "code": "91010010",
+      "account_type": "expense",
+      "reconcile": true,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": false,
+      "deprecated": false
+    },
+    {
+      "id": 3130,
+      "name": "Undistributed Profits/Losses",
+      "code": "999999",
+      "account_type": "equity_unaffected",
+      "reconcile": false,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4544,
+      "name": "CREDITORS CONTROL - SUSPENSE",
+      "code": "CL005",
+      "account_type": "asset_non_current",
+      "reconcile": false,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    },
+    {
+      "id": 4543,
+      "name": "PETTY CASH  - FACTORY",
+      "code": "CL043",
+      "account_type": "asset_non_current",
+      "reconcile": false,
+      "currency_id": false,
+      "non_trade": false,
+      "include_initial_balance": true,
+      "deprecated": false
+    }
+  ],
+  "journals": [
+    {
+      "id": 154,
+      "name": "12345",
+      "code": "BNK1",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4538,
+        "00000001 12345"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 158,
+      "name": "ROHANA",
+      "code": "BNK2",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4542,
+        "123456 ROHANA BANK"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 63,
+      "name": "BOC BANK",
+      "code": "BOC",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4360,
+        "12090050 BANK OF CEYLON -CORPORATE BRANCH - MAIN"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 152,
+      "name": "Credit Advice - Commercial",
+      "code": "CACOM",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4357,
+        "12090030 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 62,
+      "name": "Commercial Bank",
+      "code": "COMM",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4357,
+        "12090030 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 155,
+      "name": "Commercial - Cash Receipts",
+      "code": "CRCS1",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4357,
+        "12090030 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN"
+      ],
+      "suspense_account_id": [
+        4358,
+        "12090031 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-RECEIPT"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 156,
+      "name": "Commercial - Cheque Receipts",
+      "code": "CRCS2",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4357,
+        "12090030 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN"
+      ],
+      "suspense_account_id": [
+        4358,
+        "12090031 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-RECEIPT"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 87,
+      "name": "BOC - Cash Receipts",
+      "code": "CRSCC",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4360,
+        "12090050 BANK OF CEYLON -CORPORATE BRANCH - MAIN"
+      ],
+      "suspense_account_id": [
+        4361,
+        "12090051 BANK OF CEYLON - CORPORATE BRANCH - RECEIPT"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 88,
+      "name": "BOC - Cheque Receipts",
+      "code": "CRSCH",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4360,
+        "12090050 BANK OF CEYLON -CORPORATE BRANCH - MAIN"
+      ],
+      "suspense_account_id": [
+        4361,
+        "12090051 BANK OF CEYLON - CORPORATE BRANCH - RECEIPT"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 151,
+      "name": "Debit Advice - Commercial",
+      "code": "DACOM",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4357,
+        "12090030 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 134,
+      "name": "Vendor Payment - BOC",
+      "code": "VPBOC",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4360,
+        "12090050 BANK OF CEYLON -CORPORATE BRANCH - MAIN"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 135,
+      "name": "Vendor Payment - Commercial",
+      "code": "VPCOM",
+      "type": "bank",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4357,
+        "12090030 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-MAIN"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 36,
+      "name": "Cash",
+      "code": "CASH",
+      "type": "cash",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4370,
+        "12090330 CASH FLOATS"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 86,
+      "name": "Customer Receipts - Cheque",
+      "code": "CRCHQ",
+      "type": "cash",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4367,
+        "12090270 CHEQUES IN HAND"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 85,
+      "name": "Customer Receipts - Cash",
+      "code": "CRCSH",
+      "type": "cash",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4371,
+        "12090350 CASH IN HAND"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 53,
+      "name": "Advance Payment",
+      "code": "ADVN",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 55,
+      "name": "Advance Payment - Repairs",
+      "code": "ADVP2",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 136,
+      "name": "Advance Receipt",
+      "code": "ADVR",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4384,
+        "22020170 SALES - ADVANCES"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 137,
+      "name": "Advance Receipt - Repairs",
+      "code": "ADVRR",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4371,
+        "12090350 CASH IN HAND"
+      ],
+      "suspense_account_id": [
+        3130,
+        "999999 Undistributed Profits/Losses"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 49,
+      "name": "Cash Issued",
+      "code": "CAIS",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 50,
+      "name": "Cash Settled",
+      "code": "CAST",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 90,
+      "name": "CP",
+      "code": "CP",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 56,
+      "name": "Vendor Despatch",
+      "code": "DESP",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": true,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 139,
+      "name": "Deposit BOC",
+      "code": "DPBOC",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4361,
+        "12090051 BANK OF CEYLON - CORPORATE BRANCH - RECEIPT"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 138,
+      "name": "Deposit Commerical ",
+      "code": "DPCOM",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4358,
+        "12090031 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-RECEIPT"
+      ],
+      "suspense_account_id": [
+        4363,
+        "12090250 BANK SUSPENSE"
+      ],
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 58,
+      "name": "Exchange Difference",
+      "code": "EXCH",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 35,
+      "name": "Fixed Asset Journal",
+      "code": "FXAJR",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 91,
+      "name": "Payment for Import Purchases - BOC",
+      "code": "IMPYB",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 140,
+      "name": "Payment for Import Purchases - Commercial",
+      "code": "IMPYC",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4359,
+        "12090032 COMMERCIAL BANK OF CEYLON PLC - COLOMBO 7 BRANCH-PAYMENT"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 83,
+      "name": "Inventory Valuation",
+      "code": "INVAL",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 48,
+      "name": "Miscellanious Journal",
+      "code": "MISC",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 27,
+      "name": "O/B",
+      "code": "OBAL",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 43,
+      "name": "Petty Cash - Ekala Sales Centre",
+      "code": "PCEK",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 141,
+      "name": "Post Dated Cheque",
+      "code": "PDC",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 142,
+      "name": "Project Advances",
+      "code": "PRJAD",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 46,
+      "name": "Purchase",
+      "code": "PURCH",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 143,
+      "name": "Sales Commission for staff",
+      "code": "SACOM",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 39,
+      "name": "Salary Payment",
+      "code": "SALPY",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 44,
+      "name": "SLT Payments",
+      "code": "SLTP",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 47,
+      "name": "TAX JOURNAL",
+      "code": "TAXJ",
+      "type": "general",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": false,
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": false,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 51,
+      "name": "Advanced Cash Purchase",
+      "code": "ADVP",
+      "type": "purchase",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4488,
+        "72030430 EXPENSES - GENERAL"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 57,
+      "name": "TP Vendor Bills",
+      "code": "TPBIL",
+      "type": "purchase",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4488,
+        "72030430 EXPENSES - GENERAL"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 144,
+      "name": "Vendor Bills (Proj-Advance)",
+      "code": "VBPJA",
+      "type": "purchase",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4488,
+        "72030430 EXPENSES - GENERAL"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 145,
+      "name": "Vendor Bills (Proj-Subcontracts)",
+      "code": "VBPJS",
+      "type": "purchase",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4488,
+        "72030430 EXPENSES - GENERAL"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 38,
+      "name": "Vendor Bills",
+      "code": "VNBIL",
+      "type": "purchase",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4488,
+        "72030430 EXPENSES - GENERAL"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 149,
+      "name": "Customer Invoices - Free Text",
+      "code": "FTI",
+      "type": "sale",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4406,
+        "41010010 SALES"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 37,
+      "name": "Customer Invoices",
+      "code": "INV",
+      "type": "sale",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4406,
+        "41010010 SALES"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 84,
+      "name": "Customer Invoices - SP Project",
+      "code": "INVPJ",
+      "type": "sale",
+      "sequence": 10,
+      "currency_id": false,
+      "default_account_id": [
+        4407,
+        "41010030 SALES - SPECIAL PROJECTS"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    },
+    {
+      "id": 150,
+      "name": "Customer Invoices - Repairs",
+      "code": "INVRE",
+      "type": "sale",
+      "sequence": 10,
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "default_account_id": [
+        4406,
+        "41010010 SALES"
+      ],
+      "suspense_account_id": false,
+      "restrict_mode_hash_table": false,
+      "refund_sequence": true,
+      "show_on_dashboard": true
+    }
+  ],
+  "company_defaults": {
+    "id": 2,
+    "name": "Jinasena Agricultural Machinery (Pvt) Ltd.",
+    "currency_id": [
+      145,
+      "LKR"
+    ],
+    "account_journal_suspense_account_id": false,
+    "account_journal_payment_debit_account_id": false,
+    "account_journal_payment_credit_account_id": false,
+    "account_journal_early_pay_discount_gain_account_id": false,
+    "account_journal_early_pay_discount_loss_account_id": false,
+    "expense_currency_exchange_account_id": false,
+    "income_currency_exchange_account_id": false,
+    "transfer_account_id": false
+  }
+}
