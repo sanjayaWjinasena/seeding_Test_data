@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Seeding - Test Data',
-    'version': '17.0.0.0.1',
+    'version': '17.0.0.0.2',
     'summary': (
         'Seeds minimum accounting scaffold from Clear-DB reference '
         'onto the dev env so Repair automations can be tested E2E'
