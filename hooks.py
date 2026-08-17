@@ -62,13 +62,29 @@ def seed_accounting_scaffold(env):
     existing = env['account.account'].sudo().search_count(
         [('company_id', '=', company.id)]
     )
-    if existing:
+    # Guard: skip only if the seed appears to have completed already.
+    # v0.0.2 shipped with a `company_ids` bug that silently failed all
+    # account creates, and Odoo then auto-created 15 dummy asset_cash
+    # accounts (one per bank/cash journal). That leaves the company
+    # with 15 accounts + 49 journals, all wrong. On upgrade, detect
+    # this partial-seed state and reset it.
+    expected = len(snapshot.get('accounts', []))
+    if existing >= expected:
         _logger.info(
-            'seeding_test_data: company %s already has %d accounts -- '
-            'skipping seed (would clobber existing CoA)',
-            company.name, existing,
+            'seeding_test_data: company %s already has %d/%d accounts '
+            '-- seed appears complete, skipping.',
+            company.name, existing, expected,
         )
         return
+    if existing:
+        _logger.warning(
+            'seeding_test_data: company %s has partial seed state '
+            '(%d/%d accounts) -- resetting journals + accounts and '
+            're-seeding from scratch. This deletes only records on '
+            'the target company, no other companies affected.',
+            company.name, existing, expected,
+        )
+        _reset_partial_seed(env, company)
 
     _logger.info(
         'seeding_test_data: seeding accounting scaffold on %s -- '
@@ -86,6 +102,41 @@ def seed_accounting_scaffold(env):
     _logger.info('seeding_test_data: seed complete on company %s', company.name)
 
 
+def _reset_partial_seed(env, company):
+    """Remove auto-created journals + accounts left over from a failed
+    prior seed. Only touches records on the target company."""
+    Journal = env['account.journal'].sudo()
+    Account = env['account.account'].sudo()
+    journals = Journal.search([('company_id', '=', company.id)])
+    if journals:
+        # Journals must be unlinked before their default_account_id
+        # accounts, otherwise Odoo raises a foreign-key protection.
+        try:
+            journals.unlink()
+            _logger.info(
+                'seeding_test_data: deleted %d journals on %s',
+                len(journals), company.name,
+            )
+        except Exception as e:
+            _logger.warning(
+                'seeding_test_data: could not delete journals on %s -- %s',
+                company.name, e,
+            )
+    accounts = Account.search([('company_id', '=', company.id)])
+    if accounts:
+        try:
+            accounts.unlink()
+            _logger.info(
+                'seeding_test_data: deleted %d accounts on %s',
+                len(accounts), company.name,
+            )
+        except Exception as e:
+            _logger.warning(
+                'seeding_test_data: could not delete accounts on %s -- %s',
+                company.name, e,
+            )
+
+
 def _create_accounts(env, company, accounts):
     """Create account.account rows. Return code->id map."""
     Account = env['account.account'].sudo()
@@ -96,12 +147,15 @@ def _create_accounts(env, company, accounts):
             continue
         with env.cr.savepoint():
             try:
+                # Odoo 17: account.account carries a plain company_id
+                # (m2o), not company_ids (m2m). The v0.0.2 bug used
+                # company_ids and silently failed all 243 creates.
                 vals = {
                     'name': row['name'],
                     'code': code,
                     'account_type': row['account_type'],
                     'reconcile': bool(row.get('reconcile')),
-                    'company_ids': [(4, company.id)],
+                    'company_id': company.id,
                 }
                 # currency_id is [id, name] or False
                 cur = row.get('currency_id')
