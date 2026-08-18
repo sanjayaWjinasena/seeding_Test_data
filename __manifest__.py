@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Seeding - Test Data',
-    'version': '17.0.0.0.11',
+    'version': '17.0.0.0.12',
     # v0.0.11: force Fix-repair, BugFix-Sales, and
     # studio_usermodel_migration to load BEFORE this module. Without
     # those explicit deps, seeding_Test_data was loaded at position

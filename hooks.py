@@ -369,6 +369,37 @@ def _seed_customer_scaffold(env, company):
             # binary / reference / etc. -- skip conservatively.
         return v
 
+    # v0.0.12: pin every partner write to the target company's
+    # context so property_* fields (ir.property) land in the correct
+    # company scope. Migration runs as SUPERUSER without an active
+    # company by default -- property writes without .with_company()
+    # go to the wrong scope, then reads from company_id=7 return
+    # False.
+    PartnerC = Partner.with_company(company)
+
+    # v0.0.12: property_product_pricelist is populated by Odoo at
+    # partner-create time with the env-default pricelist. Treat
+    # "current value matches env default" as "unset" for the
+    # purpose of backfill so a seeded pricelist can overwrite it.
+    default_pricelist_ids = set()
+    default_pl = env['product.pricelist'].sudo().search(
+        [('active', '=', True)], order='sequence, id', limit=2)
+    default_pricelist_ids.update(default_pl.ids)
+    _record('default_pricelist_ids_that_wont_block_backfill=%r' %
+            sorted(default_pricelist_ids))
+
+    # Fields where we ALWAYS write source-of-truth from the snapshot
+    # when the source has a value, regardless of what's in the DB.
+    # ir.property fields: what the DB shows may be an env default
+    # rather than user intent, so it's safe to override.
+    OVERRIDE_KEYS = frozenset((
+        'property_product_pricelist',
+        'property_account_receivable_id',
+        'property_account_payable_id',
+        'property_payment_term_id',
+        'property_supplier_payment_term_id',
+    ))
+
     created_c = backfilled_c = unchanged_c = 0
     errors_c = 0
     sample_logged = False
@@ -376,7 +407,7 @@ def _seed_customer_scaffold(env, company):
         name = row.get('name')
         if not name:
             continue
-        existing = Partner.search([('name', '=', name)], limit=1)
+        existing = PartnerC.search([('name', '=', name)], limit=1)
         cfg = _build_config_vals(row)
         if not sample_logged:
             _record('sample cfg for %r keys=%r existing_id=%s' %
@@ -387,13 +418,20 @@ def _seed_customer_scaffold(env, company):
             try:
                 if existing:
                     # Only write config fields; leave core identity alone.
-                    # And only write keys where the current value is
-                    # empty (falsy) -- don't clobber a manually-set value.
+                    # Rule:
+                    #   * OVERRIDE_KEYS (property fields): always write
+                    #     when source has a value -- current DB value
+                    #     is likely an env default, not user intent.
+                    #   * All other keys: only write when current is
+                    #     empty (falsy) so we don't clobber a
+                    #     manually-set value.
                     to_write = {}
                     current = existing.read(list(cfg.keys()))[0] if cfg else {}
                     for k, v in cfg.items():
+                        if k in OVERRIDE_KEYS:
+                            to_write[k] = v
+                            continue
                         cur = current.get(k)
-                        # For m2o fields, current is [id, name] or False.
                         cur_id = cur[0] if isinstance(cur, list) else cur
                         if not cur_id:
                             to_write[k] = v
@@ -411,12 +449,12 @@ def _seed_customer_scaffold(env, company):
                         'supplier_rank': row.get('supplier_rank') or 0,
                         'company_id': company.id,
                     })
-                    Partner.create(vals)
+                    PartnerC.create(vals)
                     created_c += 1
-                    # v0.0.8 -- property + Studio fields sometimes drop on
-                    # create() for reasons that vary by Odoo release. Do
-                    # an immediate write() to lock them in.
-                    new = Partner.search([('name', '=', name)], limit=1)
+                    # Property + Studio fields sometimes drop on
+                    # create() for reasons that vary by Odoo release.
+                    # Immediate write() locks them in.
+                    new = PartnerC.search([('name', '=', name)], limit=1)
                     if new and cfg:
                         try:
                             new.write(cfg)
