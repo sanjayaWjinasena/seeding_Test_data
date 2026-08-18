@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Seeding - Test Data',
-    'version': '17.0.0.0.6',
+    'version': '17.0.0.0.7',
     'depends': ['account', 'sale', 'stock', 'helpdesk'],
     'summary': (
         'Seeds minimum accounting scaffold from Clear-DB reference '

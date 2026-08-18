@@ -62,10 +62,12 @@ def seed_accounting_scaffold(env):
     if not os.path.isfile(SEED_PATH):
         _logger.warning(
             'seeding_test_data: accounting seed file missing at %s -- '
-            'proceeding to helpdesk-only seed',
+            'proceeding to helpdesk + customer seed',
             SEED_PATH,
         )
         _seed_helpdesk_scaffold(env, company)
+        _reset_repair_stages_company(env)
+        _seed_customer_scaffold(env, company)
         return
     with open(SEED_PATH, encoding='utf-8') as fh:
         snapshot = json.load(fh)
@@ -90,6 +92,8 @@ def seed_accounting_scaffold(env):
         _seed_helpdesk_scaffold(env, company)
         # v0.0.5: also reset repair-stage company (idempotent)
         _reset_repair_stages_company(env)
+        # v0.0.7: also seed customers (its own skip-existing guard runs)
+        _seed_customer_scaffold(env, company)
         return
     if existing:
         _logger.warning(
