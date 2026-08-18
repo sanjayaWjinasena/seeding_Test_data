@@ -181,15 +181,25 @@ def _seed_customer_scaffold(env, company):
                 )
 
     # 2. Pricelists (create-if-missing, match by name).
+    # Also register the currency-suffixed display_name variant so
+    # customer refs (which carry '<name> (<currency>)') resolve.
     Pricelist = env['product.pricelist'].sudo()
     pricelist_name_to_id = {}
+
+    def _register_pricelist(pl_id, name, currency_code):
+        pricelist_name_to_id[name] = pl_id
+        if currency_code:
+            pricelist_name_to_id['%s (%s)' % (name, currency_code)] = pl_id
+
     for row in snapshot.get('pricelists') or []:
         name = row.get('name')
         if not name:
             continue
+        cur = row.get('currency_id')
+        curr_code = cur[1] if isinstance(cur, list) and len(cur) > 1 else None
         existing = Pricelist.search([('name', '=', name)], limit=1)
         if existing:
-            pricelist_name_to_id[name] = existing.id
+            _register_pricelist(existing.id, name, curr_code)
             continue
         with env.cr.savepoint():
             try:
@@ -199,11 +209,9 @@ def _seed_customer_scaffold(env, company):
                     'sequence': row.get('sequence') or 10,
                     'discount_policy': row.get('discount_policy') or 'with_discount',
                 }
-                # currency_id is [id, name]
-                cur = row.get('currency_id')
-                if isinstance(cur, list):
+                if curr_code:
                     curr = env['res.currency'].search(
-                        [('name', '=', cur[1])], limit=1
+                        [('name', '=', curr_code)], limit=1
                     )
                     if curr:
                         vals['currency_id'] = curr.id
@@ -213,7 +221,7 @@ def _seed_customer_scaffold(env, company):
                     if k in row and k in Pricelist._fields:
                         vals[k] = row[k]
                 new = Pricelist.create(vals)
-                pricelist_name_to_id[name] = new.id
+                _register_pricelist(new.id, name, curr_code)
                 _logger.info(
                     'seeding_test_data: created pricelist %r (id %d)',
                     name, new.id,
@@ -248,90 +256,155 @@ def _seed_customer_scaffold(env, company):
         rec = env[model].sudo().search([(field, '=', name)], limit=1)
         return rec.id if rec else False
 
-    # 6. Customers (skip existing by name)
+    # 6. Customers: create net-new OR back-fill missing fields on
+    # customers that already exist by name. v0.0.6 hit a bug where
+    # Odoo's `create()` silently dropped several property + Studio
+    # values (property_account_receivable_id, property_payment_term_id,
+    # x_studio_customer_group, x_studio_group_type, etc.), leaving
+    # partial records. v0.0.8 runs an explicit `write()` after the
+    # partner exists so those fields land.
     Partner = env['res.partner'].sudo()
-    created_c = skipped_c = 0
+
+    # Field-name-agnostic reference resolvers. Each key is a
+    # relation model; each value is a callable that takes the source
+    # ref (typically [source_id, display_name]) and returns a target
+    # env id (int) or False. Adding a new Studio m2o that points to
+    # one of these models "just works" -- no code change needed.
+    #
+    # For relations NOT listed here we fall back to a generic
+    # search-by-display-name; add an entry to override the strategy
+    # when name-based match is unreliable (e.g. account.account
+    # display_name is '<code> <name>' -- we key on code instead).
+    RELATION_RESOLVERS = {
+        'account.account': lambda ref: account_code_to_id.get(
+            (ref[1] or '').split(' ', 1)[0]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'account.payment.term': lambda ref: term_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'product.pricelist': lambda ref: pricelist_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'x_customer_group': lambda ref: group_x_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+    }
+
+    # Fields we NEVER copy from the snapshot -- they're either
+    # source-only identity, computed on target, or intentionally
+    # left as env-default (e.g. company_id is set from `company`).
+    SKIP_FIELDS = frozenset((
+        'id',                # source-only pk
+        'display_name',      # computed
+        'create_uid', 'create_date',
+        'write_uid', 'write_date',
+        '__last_update',
+        'company_id',        # caller sets from target company
+        'company_ids',       # multi-company: leave env default
+    ))
+
+    def _resolve_relation(field, ref):
+        """Return an id on the target env for a m2o ref, or False."""
+        relation = field.comodel_name
+        resolver = RELATION_RESOLVERS.get(relation)
+        if resolver:
+            return resolver(ref)
+        # Generic fallback: match relation by display_name.
+        if isinstance(ref, list) and len(ref) >= 2 and ref[1]:
+            rec = env[relation].sudo().search(
+                [('display_name', '=', ref[1])], limit=1)
+            return rec.id if rec else False
+        return False
+
+    def _build_config_vals(row):
+        """Data-driven mapping of snapshot row -> target-env vals.
+        Iterates every key in the row, honours the Partner._fields
+        schema, and skips anything we can't safely write. New
+        Studio fields on Clear-DB flow through without code changes."""
+        v = {}
+        for key, source_val in row.items():
+            if key in SKIP_FIELDS:
+                continue
+            field = Partner._fields.get(key)
+            if field is None:
+                # Field not declared on this env -- silently skip.
+                # (Common for Studio-only fields that a target module
+                #  hasn't ported yet.)
+                continue
+            if source_val in (False, None, ''):
+                # Skip empty source values -- don't clobber defaults
+                # or user-set values on backfill.
+                continue
+            ftype = field.type
+            if ftype in ('many2one',):
+                rid = _resolve_relation(field, source_val)
+                if rid:
+                    v[key] = rid
+            elif ftype in ('char', 'text', 'html', 'selection',
+                           'integer', 'float', 'monetary',
+                           'boolean', 'date', 'datetime'):
+                v[key] = source_val
+            elif ftype in ('many2many', 'one2many'):
+                # Skip for now -- x2many needs relation-record hydration
+                # that this seeder doesn't do. Add explicit handling
+                # per field when a specific x2many needs seeding.
+                continue
+            # binary / reference / etc. -- skip conservatively.
+        return v
+
+    created_c = backfilled_c = unchanged_c = 0
     for row in snapshot.get('customers') or []:
         name = row.get('name')
         if not name:
             continue
         existing = Partner.search([('name', '=', name)], limit=1)
-        if existing:
-            skipped_c += 1
-            continue
+        cfg = _build_config_vals(row)
         with env.cr.savepoint():
             try:
-                vals = {
-                    'name': name,
-                    'is_company': bool(row.get('is_company', True)),
-                    'customer_rank': row.get('customer_rank') or 1,
-                    'supplier_rank': row.get('supplier_rank') or 0,
-                    'company_id': company.id,
-                }
-                for k in ('ref', 'vat', 'email', 'phone', 'mobile',
-                          'street', 'street2', 'city', 'zip'):
-                    if row.get(k):
-                        vals[k] = row[k]
-                # country / state
-                if row.get('country_id'):
-                    cid = _resolve_ref(row['country_id'], 'res.country')
-                    if cid:
-                        vals['country_id'] = cid
-                if row.get('state_id'):
-                    sid = _resolve_ref(row['state_id'], 'res.country.state')
-                    if sid:
-                        vals['state_id'] = sid
-                # Property fields
-                rec_acc_ref = row.get('property_account_receivable_id')
-                if isinstance(rec_acc_ref, list) and len(rec_acc_ref) >= 2:
-                    code = (rec_acc_ref[1] or '').split(' ', 1)[0]
-                    aid = account_code_to_id.get(code)
-                    if aid:
-                        vals['property_account_receivable_id'] = aid
-                pay_acc_ref = row.get('property_account_payable_id')
-                if isinstance(pay_acc_ref, list) and len(pay_acc_ref) >= 2:
-                    code = (pay_acc_ref[1] or '').split(' ', 1)[0]
-                    aid = account_code_to_id.get(code)
-                    if aid:
-                        vals['property_account_payable_id'] = aid
-                term_ref = row.get('property_payment_term_id')
-                if isinstance(term_ref, list) and len(term_ref) >= 2:
-                    tid = term_name_to_id.get(term_ref[1])
-                    if tid:
-                        vals['property_payment_term_id'] = tid
-                pl_ref = row.get('property_product_pricelist')
-                if isinstance(pl_ref, list) and len(pl_ref) >= 2:
-                    plid = pricelist_name_to_id.get(pl_ref[1])
-                    if plid:
-                        vals['property_product_pricelist'] = plid
-                # Studio fields on partner
-                for k in ('x_studio_address',
-                          'x_studio_svat_registration_number',
-                          'x_studio_svat_registration_status',
-                          'x_studio_vat_registered',
-                          'x_studio_vat_registration_number',
-                          'x_studio_vat_registration_status',
-                          'x_studio_vat_exempted_number',
-                          'x_studio_mandatory_bank_guarantee',
-                          'x_studio_group_type',
-                          'x_studio_payment_method'):
-                    if k in row and k in Partner._fields:
-                        vals[k] = row[k] if row[k] is not False else False
-                # x_studio_customer_group reference resolution
-                cg_ref = row.get('x_studio_customer_group')
-                if isinstance(cg_ref, list) and len(cg_ref) >= 2:
-                    gid = group_x_name_to_id.get(cg_ref[1])
-                    if gid and 'x_studio_customer_group' in Partner._fields:
-                        vals['x_studio_customer_group'] = gid
-                Partner.create(vals)
-                created_c += 1
+                if existing:
+                    # Only write config fields; leave core identity alone.
+                    # And only write keys where the current value is
+                    # empty (falsy) -- don't clobber a manually-set value.
+                    to_write = {}
+                    current = existing.read(list(cfg.keys()))[0] if cfg else {}
+                    for k, v in cfg.items():
+                        cur = current.get(k)
+                        # For m2o fields, current is [id, name] or False.
+                        cur_id = cur[0] if isinstance(cur, list) else cur
+                        if not cur_id:
+                            to_write[k] = v
+                    if to_write:
+                        existing.write(to_write)
+                        backfilled_c += 1
+                    else:
+                        unchanged_c += 1
+                else:
+                    vals = dict(cfg)
+                    vals.update({
+                        'name': name,
+                        'is_company': bool(row.get('is_company', True)),
+                        'customer_rank': row.get('customer_rank') or 1,
+                        'supplier_rank': row.get('supplier_rank') or 0,
+                        'company_id': company.id,
+                    })
+                    Partner.create(vals)
+                    created_c += 1
+                    # v0.0.8 -- property + Studio fields sometimes drop on
+                    # create() for reasons that vary by Odoo release. Do
+                    # an immediate write() to lock them in.
+                    new = Partner.search([('name', '=', name)], limit=1)
+                    if new and cfg:
+                        try:
+                            new.write(cfg)
+                        except Exception as e2:
+                            _logger.warning(
+                                'seeding_test_data: post-create write '
+                                'for %r -- %s', name, e2,
+                            )
             except Exception as e:
                 _logger.warning(
-                    'seeding_test_data: skip customer %r -- %s', name, e,
+                    'seeding_test_data: skip/backfill customer %r -- %s',
+                    name, e,
                 )
     _logger.info(
-        'seeding_test_data: customers -- created %d, skipped-existing %d',
-        created_c, skipped_c,
+        'seeding_test_data: customers -- created %d, back-filled %d, '
+        'unchanged %d', created_c, backfilled_c, unchanged_c,
     )
 
 
