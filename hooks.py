@@ -142,25 +142,25 @@ def _seed_customer_scaffold(env, company):
       * x_studio_customer_group -> by group.x_name (studio_usermodel_migration)
       * country_id / state_id -> by name (skip if not found)
     """
-    _logger.info(
-        'seeding_test_data v0.0.9: _seed_customer_scaffold ENTRY -- '
-        'company=%s (id=%d), seed_path=%s',
-        company.name, company.id, CUSTOMER_SEED_PATH,
-    )
+    Param = env['ir.config_parameter'].sudo()
+    diag = []
+    def _record(msg):
+        diag.append(msg)
+        _logger.info('seeding_test_data v0.0.10: %s', msg)
+        Param.set_param('seeding_test_data.diag', '\n'.join(diag[-200:]))
+
+    _record('ENTRY company=%s (id=%d) seed_path=%s' %
+            (company.name, company.id, CUSTOMER_SEED_PATH))
     if not os.path.isfile(CUSTOMER_SEED_PATH):
-        _logger.warning(
-            'seeding_test_data: customer seed file not present -- skipping'
-        )
+        _record('FAIL customer seed file not present')
         return
     with open(CUSTOMER_SEED_PATH, encoding='utf-8') as fh:
         snapshot = json.load(fh)
-    _logger.info(
-        'seeding_test_data v0.0.9: snapshot -- terms=%d pricelists=%d '
-        'customers=%d',
+    _record('snapshot terms=%d pricelists=%d customers=%d' % (
         len(snapshot.get('payment_terms') or []),
         len(snapshot.get('pricelists') or []),
         len(snapshot.get('customers') or []),
-    )
+    ))
 
     # 1. Payment terms (create-if-missing, match by name)
     Term = env['account.payment.term'].sudo()
@@ -268,12 +268,14 @@ def _seed_customer_scaffold(env, company):
         rec = env[model].sudo().search([(field, '=', name)], limit=1)
         return rec.id if rec else False
 
-    _logger.info(
-        'seeding_test_data v0.0.9: resolver maps built -- '
-        'terms=%d pricelists=%d groups=%d account_codes=%d',
+    _record('resolvers terms=%d pricelists=%d groups=%d account_codes=%d '
+            'term_keys=%r pricelist_keys=%r group_keys=%r' % (
         len(term_name_to_id), len(pricelist_name_to_id),
         len(group_x_name_to_id), len(account_code_to_id),
-    )
+        sorted(term_name_to_id.keys())[:5],
+        sorted(pricelist_name_to_id.keys())[:5],
+        sorted(group_x_name_to_id.keys())[:5],
+    ))
 
     # 6. Customers: create net-new OR back-fill missing fields on
     # customers that already exist by name. v0.0.6 hit a bug where
@@ -377,10 +379,9 @@ def _seed_customer_scaffold(env, company):
         existing = Partner.search([('name', '=', name)], limit=1)
         cfg = _build_config_vals(row)
         if not sample_logged:
-            _logger.info(
-                'seeding_test_data v0.0.9: sample cfg for %r -- keys=%r',
-                name, sorted(cfg.keys()),
-            )
+            _record('sample cfg for %r keys=%r existing_id=%s' %
+                    (name, sorted(cfg.keys()),
+                     existing.id if existing else None))
             sample_logged = True
         with env.cr.savepoint():
             try:
@@ -430,11 +431,9 @@ def _seed_customer_scaffold(env, company):
                     'seeding_test_data: skip/backfill customer %r -- %s',
                     name, e,
                 )
-    _logger.info(
-        'seeding_test_data v0.0.9: customers -- created=%d backfilled=%d '
-        'unchanged=%d errors=%d', created_c, backfilled_c, unchanged_c,
-        errors_c,
-    )
+    _record('DONE created=%d backfilled=%d unchanged=%d errors=%d' % (
+        created_c, backfilled_c, unchanged_c, errors_c,
+    ))
 
 
 def _reset_repair_stages_company(env):
