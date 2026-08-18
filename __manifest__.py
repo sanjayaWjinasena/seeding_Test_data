@@ -1,23 +1,24 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Seeding - Test Data',
-    'version': '17.0.0.0.12',
-    # v0.0.11: force Fix-repair, BugFix-Sales, and
-    # studio_usermodel_migration to load BEFORE this module. Without
-    # those explicit deps, seeding_Test_data was loaded at position
-    # 507/771 while its sister modules loaded later -- meaning their
-    # x_studio_* fields on res.partner / helpdesk.stage weren't in
-    # the model's `_fields` dict when the post-migration hook ran,
-    # so the customer seeder silently dropped every Studio field.
+    'version': '17.0.0.0.13',
+    # v0.0.13: scope reduced. Customer seeding moved to the standalone
+    # scripts/import_customers_to_dev.py script (property_* fields are
+    # ir.property, company-scoped, and don't write cleanly from a
+    # post_init_hook running as SUPERUSER without an active company).
+    #
+    # Fix-repair stays as a dep because _reset_repair_stages_company
+    # references helpdesk.stage.x_studio_company_id (declared by
+    # Fix-repair v276+) and env.ref('Fix-repair.stage_*').
     'depends': [
         'account', 'sale', 'stock', 'helpdesk',
         'Fix-repair',
-        'BugFix-Sales',
-        'studio_usermodel_migration',
     ],
     'summary': (
-        'Seeds minimum accounting scaffold from Clear-DB reference '
-        'onto the dev env so Repair automations can be tested E2E'
+        'Seeds minimum static reference data (accounting scaffold + '
+        'helpdesk team + repair stage company reset) from Clear-DB '
+        'reference. Customer data is loaded separately via '
+        'scripts/import_customers_to_dev.py.'
     ),
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Accounting',
