@@ -1,0 +1,5766 @@
+{
+  "source_company": "Jinasena Agricultural Machinery (Pvt) Ltd.",
+  "customers": [
+    {
+      "id": 4633,
+      "name": "A C PAUL & CO LTD",
+      "ref": "AV0115",
+      "vat": false,
+      "email": "sanjayarajans26407@gmail.com",
+      "phone": false,
+      "mobile": false,
+      "street": "# 324,Sri Sangaraja Mawatha,",
+      "street2": false,
+      "city": "Colombo 10",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 9,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": false,
+      "property_supplier_payment_term_id": [
+        278,
+        "60 Days"
+      ],
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": false,
+      "x_studio_group_type": false,
+      "x_studio_payment_method": false,
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "124007330-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": [
+        232,
+        "CR-PUR"
+      ],
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6112,
+      "name": "AAA TRADING CO.LTD",
+      "ref": "AC005195",
+      "vat": false,
+      "email": false,
+      "phone": "rr",
+      "mobile": false,
+      "street": "MALE , MALDIVES",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 4,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        278,
+        "60 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        215,
+        "EXPT"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6141,
+      "name": "ABHAYAGIRI PROJECT",
+      "ref": "AC005750",
+      "vat": false,
+      "email": false,
+      "phone": "0252587912",
+      "mobile": false,
+      "street": "PROJECT MANAGER, CENTRAL CALTURAL FUND, ABHAYAGIRI PROJECT",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 4,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "goverment 1",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6538,
+      "name": "AMARATHUNGA HARDWARE",
+      "ref": "AC005934",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "778892564",
+      "street": "MAHAOYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6086,
+      "name": "AMILA TRADE CENTRE",
+      "ref": "AC002582",
+      "vat": false,
+      "email": false,
+      "phone": "0776692430",
+      "mobile": false,
+      "street": "ELIKEWELA NIWASA, 31 ELA, KOLONGODA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6114,
+      "name": "AQUINAS COLLEGE FARM",
+      "ref": "AC005295",
+      "vat": false,
+      "email": false,
+      "phone": "077 3571412 -sameera",
+      "mobile": false,
+      "street": "RAGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6146,
+      "name": "ARCHITECTURAL INTERIORS (EXPORT) PVT LTD",
+      "ref": "AC005806",
+      "vat": false,
+      "email": false,
+      "phone": "1",
+      "mobile": false,
+      "street": "LUNUGANGANO.11, 33RD LANE, OFF BAGATHALE RD, COL-03",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "104027423-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6512,
+      "name": "BEAM HELA  OSU  LANKA (PVT )LTD",
+      "ref": "AC001752",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "071-4065872",
+      "street": "BEAM CHEMICALS (PVT) LTD456AVISSAWELLA  RD,MIRISWATHTHAPUWAKPITIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6128,
+      "name": "BENTHOTA BAKE HOUSE",
+      "ref": "AC005561",
+      "vat": false,
+      "email": false,
+      "phone": "0777650202",
+      "mobile": false,
+      "street": "PERADENIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6738,
+      "name": "CENTRAL COLLEGE",
+      "ref": "AC005395",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": false,
+      "street": "ANURADHAPURA",
+      "street2": false,
+      "city": "ANURADHAPURA",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6056,
+      "name": "CEYLON PETROLEUM STORAGE TERMINAL LTD",
+      "ref": "AC000327",
+      "vat": false,
+      "email": false,
+      "phone": "01-2230300",
+      "mobile": false,
+      "street": "KITHUDANA PUBUDUWASRI PRASANSARAMAYA, WALPOLA, RAGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6054,
+      "name": "CHANDIMA TRADE CENTER",
+      "ref": "AC000194",
+      "vat": false,
+      "email": false,
+      "phone": "0472230300",
+      "mobile": false,
+      "street": "MAIN STREET, PALLEGAMA, EMBILIPITIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114458953 7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6145,
+      "name": "COLOMBO EAST BASE HOSPITAL",
+      "ref": "AC005779",
+      "vat": false,
+      "email": false,
+      "phone": "+94 70 779 6086",
+      "mobile": "0755125513",
+      "street": "THE CHAIRMEN(CEBH), MULLERIYAWA NEW TOWN",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "GOV East",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6063,
+      "name": "CROWN BISCUT COMPANY (PVT) LTD",
+      "ref": "AC001026",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "AIR PORT ROAD, NELUMKULAMA, ANURADHAPURA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114401145 7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6111,
+      "name": "D D ATHUKORALA GROUP (PVT) LTD",
+      "ref": "AC005192",
+      "vat": false,
+      "email": false,
+      "phone": "0755343043",
+      "mobile": false,
+      "street": "(BEKERY) 69, MAIN STREET, KEGALLE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6098,
+      "name": "D S SENANAYAKE COLLEGE",
+      "ref": "AC003870",
+      "vat": false,
+      "email": false,
+      "phone": "0703699520",
+      "mobile": "MR VAJIRA",
+      "street": "COLOMBO 7",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6137,
+      "name": "DAVID PEIRIS LEISURE PVT LTD",
+      "ref": "AC005707",
+      "vat": "d",
+      "email": "DPL@dpmc.com",
+      "phone": "0743716223",
+      "mobile": false,
+      "street": "NO 162/F, MAITHREE MW, WALGAMA, BANDARAGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 16,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "102552989-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6514,
+      "name": "DEPUTY PROVINCIAL DIRECTOR OF AGRICULTURE (EXTENSION)",
+      "ref": "AC002654",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "0111 2607135",
+      "street": "OFFICE OF THE DEPUTY PROVINCIAL DIRECTOR OF AGRICULTURE (EXTENSION)NO 497/1 GALLE ROAD,RATHMALANA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "gov agri",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6739,
+      "name": "DIDULA MOTORES",
+      "ref": "AC002941",
+      "vat": "-",
+      "email": false,
+      "phone": false,
+      "mobile": false,
+      "street": "HADAPANAGALA, WELLAWAYA",
+      "street2": false,
+      "city": "HADAPANAGALA, WELLAWAYA",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6125,
+      "name": "DIDULA POWER ELECTRICLES (PVT) LIMITED,",
+      "ref": "AC005495",
+      "vat": false,
+      "email": false,
+      "phone": "0773466099",
+      "mobile": "0713528194",
+      "street": "NO 77, PUSHPA BUILDING, RAJASINGHE MAWATHA, HAWA ELIYA, NUWARA ELIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 3,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6508,
+      "name": "DINAPALA (PVT) LTD",
+      "ref": "AC000187",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "11",
+      "street": "# 32,CROSS STREETKANDY",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114020931_7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6118,
+      "name": "DISSANAYAKA TOOL CENTRE",
+      "ref": "AC005328",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "694, ANURDHAPURA ROAD, DAMBULLA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6117,
+      "name": "DISTRICT GENERAL HOSPITAL",
+      "ref": "AC005325",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "NUWARAELIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6069,
+      "name": "DIVISIONAL SECRETARIAT OFFICE",
+      "ref": "AC001403",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "NUWARA ELIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6740,
+      "name": "DIVISIONAL SECRETARY,",
+      "ref": "AC005980",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": false,
+      "street": "DIVISION SECRETARY OFFICE, KADUWELA.",
+      "street2": false,
+      "city": "DIVISION SECRETARY OFFICE, KADUWELA.",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "Govement",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6097,
+      "name": "DOLE LANKA (PVT) LTD",
+      "ref": "AC003772",
+      "vat": false,
+      "email": false,
+      "phone": "0114641050",
+      "mobile": false,
+      "street": "12TH FLOOR, PARKLAND BUILDING, NO.33, PRAK STREET, COLOMBO 02",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": "SVAT004605",
+      "x_studio_svat_registration_status": "SVAT Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114412082-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6533,
+      "name": "ELLAWALA HORTICULTURE (PVT) LIMITED",
+      "ref": "AC005912",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "-",
+      "street": "DAMBEWATANA,GALKIRIYAGAMA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6519,
+      "name": "FRUIT CROP RESERCH & DEVELOPMENT STATION",
+      "ref": "AC003627",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "0",
+      "street": "P.O.BOX 16GANNORUWAPERADENIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6129,
+      "name": "FRUIT RESEARCH AND DEVELOPMENT INSTITUTE",
+      "ref": "AC005578",
+      "vat": false,
+      "email": false,
+      "phone": "034-2261323",
+      "mobile": "0718013561",
+      "street": "DEPARTMENT OF AGRICULTURE, KANANVILA, HORANA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6052,
+      "name": "FUJI INTERNATIONAL MOTORS",
+      "ref": "AC000139",
+      "vat": false,
+      "email": false,
+      "phone": "0714559955",
+      "mobile": false,
+      "street": "RATNAPURA",
+      "street2": false,
+      "city": "RATNAPURA",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6741,
+      "name": "GAJABA REGIMENT",
+      "ref": "AC001365",
+      "vat": false,
+      "email": false,
+      "phone": "252222127",
+      "mobile": false,
+      "street": "SALIYAPURA, ANURADHAPURA.",
+      "street2": false,
+      "city": "SALIYAPURA, ANURADHAPURA.",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6528,
+      "name": "GENERAL HOSPITAL",
+      "ref": "AC005629",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "*",
+      "street": "HAWA ELIYA ROADNUWARA ELIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6078,
+      "name": "GONSALWEZ COLLEGE",
+      "ref": "AC002094",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "PAMUNUGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6579,
+      "name": "GREEN LANKA MANAGEMENT",
+      "ref": "AC005999",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "768773430",
+      "street": "GINNALIYAURUBOKKA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "409354939-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6575,
+      "name": "HDDES EXTRACTS",
+      "ref": "AC005995",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "762305139",
+      "street": "POLICE PARK",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6096,
+      "name": "HDDES EXTRACTS (PVT) LTD",
+      "ref": "AC003750",
+      "vat": false,
+      "email": false,
+      "phone": "11",
+      "mobile": "0773043900",
+      "street": "NO. 02, POLICE PARK AVENUE, COLOMBO 05.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114293741 7000.",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6059,
+      "name": "HOALBROOK AGRO CHEMICALS",
+      "ref": "AC000730",
+      "vat": false,
+      "email": false,
+      "phone": "0512230022",
+      "mobile": false,
+      "street": "NO 135, HOALBROOK BAZAR, AGARAPATYHANA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6571,
+      "name": "IN SERVICE TRAINING INSTITUTE",
+      "ref": "AC005990",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "759743061",
+      "street": "DEPARTMENT OF AGRICULTURENO21,GANNORUWAPERADENIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": " GOV",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6594,
+      "name": "JAGRO (PVT) LIMITED",
+      "ref": "AC006025",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "*",
+      "street": "RADELLANANUOYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6049,
+      "name": "JINASENA (PVT) LTD",
+      "ref": "AC000001",
+      "vat": "-",
+      "email": false,
+      "phone": "0112684919",
+      "mobile": false,
+      "street": "# 186, ELVITIGALA MAWATHA, COLOMBO 08, Sri Lanka",
+      "street2": false,
+      "city": "COLOMBO 08",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 58,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4354,
+        "12040010 DEBTORS LEDGER CONTROL - INTER COMPANIES"
+      ],
+      "property_account_payable_id": [
+        4402,
+        "22070010 CREDITORS CONTROL - INTER COMPANY"
+      ],
+      "property_payment_term_id": [
+        279,
+        "90 Days"
+      ],
+      "property_supplier_payment_term_id": [
+        275,
+        "21 Days"
+      ],
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        217,
+        "SBU1"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "104024955 7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6130,
+      "name": "JUDE RODRIGO, WORLD VISION LANKA",
+      "ref": "AC005579",
+      "vat": false,
+      "email": false,
+      "phone": "077397527",
+      "mobile": false,
+      "street": "39/1, WALISARAWATHTHA, MAHABAGE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6156,
+      "name": "KADURATA HARDWARE",
+      "ref": "AC005853",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "NO: 26, 27 KANDY ROAD, MAHIYANGANAYA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6509,
+      "name": "KALYANI SUPER CENTRE (PVT)LTD",
+      "ref": "AC000226",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "0",
+      "street": "NO:02KANDY ROAD,RIKILLAGASKADA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6531,
+      "name": "KURUPANAWA TEA FACTORY -NAGODA",
+      "ref": "AC005801",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "2222",
+      "street": "NAGODAGALLE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6138,
+      "name": "LAKBIMA RICE MILLS PVT LTD",
+      "ref": "AC005714",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "NO 796, HATHAMUNA ROAD, ETHUMALPITIYA , POLONNARUWA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6561,
+      "name": "LUKEY YOUGET",
+      "ref": "AC005974",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "222",
+      "street": "MATARA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6064,
+      "name": "MAHANUWARA TRADERS",
+      "ref": "AC001029",
+      "vat": false,
+      "email": false,
+      "phone": "066-5675608",
+      "mobile": false,
+      "street": "NO: 173, GONGAWELA ROAD, MATHALE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6124,
+      "name": "MAHAWELI AUTHORITY OF SRI LANKA",
+      "ref": "AC005491",
+      "vat": false,
+      "email": false,
+      "phone": "0632244144",
+      "mobile": false,
+      "street": "MAHAWELI AUTHORITY OF SRI LANKA, RESIDENT PROJECT MANAGER'S OFFICE, RAMBAKENOYA PROJECT, MAHAOYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        273,
+        "14 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "Mahaweli gov.",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6127,
+      "name": "MAHAWELI COCONUT PLANTATION PLC",
+      "ref": "AC005508",
+      "vat": false,
+      "email": "mpcl@sltnet.lk",
+      "phone": "0777899662",
+      "mobile": "0779089701",
+      "street": "KIBULAPITIYA ROAD, NEGAMBO",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6089,
+      "name": "MAHAWELI STEEL",
+      "ref": "AC002794",
+      "vat": false,
+      "email": false,
+      "phone": "0777352762",
+      "mobile": false,
+      "street": "No: 25B, MAIN STREET, PUNDULOYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6100,
+      "name": "MATHUGAMA PRADESHIYA SABAWA",
+      "ref": "AC004421",
+      "vat": false,
+      "email": false,
+      "phone": ".",
+      "mobile": false,
+      "street": "MATHUGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6524,
+      "name": "MOHAMED TRADERS",
+      "ref": "AC005271",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "067-2222605",
+      "street": "NO : 91,MAIN STREET,SAINTHAMARUTHU  -  09",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6079,
+      "name": "NALEEN ENTERPRISES",
+      "ref": "AC002141",
+      "vat": false,
+      "email": false,
+      "phone": "077-9082355",
+      "mobile": "027-2250478",
+      "street": "03/01, MAHIYANGNA ROAD, MUWAGAMMANA, DEHIATTA KANDIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6186,
+      "name": "NATIONAL AQUACULTURE DEVELOPMENT AUTHORITY OF SRI LANKA",
+      "ref": "AC005904",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "IRANAMADU, KILINOCHCHI.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6134,
+      "name": "NATIONAL WATER SUPPLY & DRANAGE BOARD",
+      "ref": "AC005667",
+      "vat": false,
+      "email": false,
+      "phone": "0777673040",
+      "mobile": false,
+      "street": "EXPORT PROCESSING ZONE, BIYAGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6546,
+      "name": "NEW SEWANA HARDWARE",
+      "ref": "AC005945",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "252224646",
+      "street": "4 CROSS ROADANURADHAPURA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6551,
+      "name": "NHRD WALISARA",
+      "ref": "AC005951",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "761964084",
+      "street": "CHEST HOSPITAL WALISARA RAGAMA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6199,
+      "name": "NILAWELI METRO HOTEL AND MANAGEMENT PVT LTD",
+      "ref": "AC002676",
+      "vat": false,
+      "email": false,
+      "phone": "0776700073",
+      "mobile": false,
+      "street": "90, G H PERERA MAWATHA,RATHANAPITIYA,BORELESGAMUWA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6050,
+      "name": "ONAK ERP TRAINING ACCADEMY (PVT) LTD",
+      "ref": "AC000006",
+      "vat": "-",
+      "email": false,
+      "phone": "01",
+      "mobile": false,
+      "street": ".Sri Lanka",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4354,
+        "12040010 DEBTORS LEDGER CONTROL - INTER COMPANIES"
+      ],
+      "property_account_payable_id": [
+        4402,
+        "22070010 CREDITORS CONTROL - INTER COMPANY"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        217,
+        "SBU1"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6569,
+      "name": "OPERATSION  MANEGER,Y GRO (PVT) LTD,",
+      "ref": "AC005988",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "0",
+      "street": "KATTIMAHANA,DUMMALASURIYA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6576,
+      "name": "OPULENT CARTERS",
+      "ref": "AC005996",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "778489000",
+      "street": "166 NAWALA ROADKOSWATTHARAJGIRIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6070,
+      "name": "ORIANT TRADING CO.PVT  LTD",
+      "ref": "AC001535",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": false,
+      "street": "NO: 323, WEBODA ROAD, UDUPILA, DELGODA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6192,
+      "name": "ORIENT HARDWARE",
+      "ref": "AC005916",
+      "vat": false,
+      "email": "F@F.COM",
+      "phone": "036-2258257",
+      "mobile": false,
+      "street": "EHELIYAGODA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 3,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6513,
+      "name": "PACKAGES LANKA PVT LTD",
+      "ref": "AC002589",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "077-7373182",
+      "street": "NO.148 MINUWANGODA ROAD,EKALA,JA-ELA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114178659-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6527,
+      "name": "PALLEGAMA TEA FACTORY",
+      "ref": "AC005455",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "777386533",
+      "street": "PALLEGAMA ESTATEULAPANE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "409274854 -7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6511,
+      "name": "PELMADULLA CENTRAL COLLAGE",
+      "ref": "AC001686",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "0",
+      "street": "PELMADULLA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6083,
+      "name": "POWER ELECTRICALS",
+      "ref": "AC002360",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "BANDARAWELA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 3,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6578,
+      "name": "PROVINCIAL MINISTRY OF AGRICULTURE",
+      "ref": "AC005998",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "-",
+      "street": "SECRETARYPROVINCIAL MINISTRY OF AGRICULTURE02ND FLOORPROVINCIAL COUNCIL COMPLEXNORTH CENTRAL PROVINCE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "gov741agr",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 7443,
+      "name": "PlayWright Customer",
+      "ref": false,
+      "vat": false,
+      "email": false,
+      "phone": "0330011223",
+      "mobile": false,
+      "street": "Gampaha Road, Ekala.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": false,
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6577,
+      "name": "RAJAPAKSA ELECTRICALS (PVT) LTD",
+      "ref": "AC005997",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "0",
+      "street": "NO 93,NISSANKA MW,MALKADUWAWA,KURUNAGALA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114352322 7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6136,
+      "name": "RANK CONTAINER TERMINALS PVT LTD",
+      "ref": "AC005695",
+      "vat": false,
+      "email": false,
+      "phone": "+94 77 320 4206",
+      "mobile": false,
+      "street": "246, AVISSAWELLA RD, ORUGODAWATTA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114459941- 7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6066,
+      "name": "SANTHYAS AGRO CHEMICALS",
+      "ref": "AC001174",
+      "vat": false,
+      "email": false,
+      "phone": "0522223204",
+      "mobile": false,
+      "street": "NO 2/CST. ANDREWS DRIVENUWARA ELIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6148,
+      "name": "SCIENTIFIC INSTRUMENTS (PVT) LTD",
+      "ref": "AC005837",
+      "vat": false,
+      "email": false,
+      "phone": "+94 70 430 0660",
+      "mobile": false,
+      "street": " NO: 183/1/1, MAHARAGAMA ROAD, BORALESGAMUWA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6140,
+      "name": "SHA LANKA TRADING",
+      "ref": "AC005748",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "NO: 220/5, KAHANTHOTA ROAD, ARANGALA, MALABE.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "409250670-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6191,
+      "name": "SHIHAN AGRO PVT LTD",
+      "ref": "AC005911",
+      "vat": false,
+      "email": false,
+      "phone": "0777777755",
+      "mobile": false,
+      "street": "371/1, SRI BODHI ROAD, GAMPAHA, SRI LANKA",
+      "street2": false,
+      "city": "GAMPAHA",
+      "zip": "11000",
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6084,
+      "name": "SIRIO LTD",
+      "ref": "AC002409",
+      "vat": false,
+      "email": "manju.a@sirioltd.org",
+      "phone": "0314879500",
+      "mobile": false,
+      "street": "KASIWATHTHA, BADALGAMA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "134009586-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6139,
+      "name": "SISILA LANKA PVT LTD",
+      "ref": "AC005725",
+      "vat": false,
+      "email": false,
+      "phone": "+94 74 175 2137",
+      "mobile": false,
+      "street": "SUPERSERV SOLUTION CENTER, MAKUBURA, KOTTAWA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "114255904-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6060,
+      "name": "SITHUMINA ENTERPRICES",
+      "ref": "AC000817",
+      "vat": false,
+      "email": false,
+      "phone": "0775151513",
+      "mobile": false,
+      "street": "KANDY ROAD, GONAGOLLA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6061,
+      "name": "SIVA MOTORS",
+      "ref": "AC000872",
+      "vat": false,
+      "email": false,
+      "phone": "071 3488717",
+      "mobile": false,
+      "street": "DEDICATED ECONOMIC CENTRE, NUWARA ELIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6107,
+      "name": "SPECTRA INDUSTRIES LANKA PVT LTD",
+      "ref": "AC005001",
+      "vat": false,
+      "email": false,
+      "phone": "0257210316",
+      "mobile": "0772071428",
+      "street": "NO: 561/B344TH CROSS STREET, NEW BUS STAND, ANURADHAPURA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6081,
+      "name": "SRI LANKA MAHAWELI AUTHORITY",
+      "ref": "AC002301",
+      "vat": false,
+      "email": false,
+      "phone": "025-2276599",
+      "mobile": false,
+      "street": "NEERAVIYA FARM, Tambuttegama, Sri Lanka",
+      "street2": false,
+      "city": "Tambuttegama",
+      "zip": "50240",
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6057,
+      "name": "SURADHI AGENCIES",
+      "ref": "AC000396",
+      "vat": false,
+      "email": false,
+      "phone": "0372282087",
+      "mobile": false,
+      "street": "HETTIPOLA ROAD, KULIYAPITIYA",
+      "street2": false,
+      "city": "KULIYAPITIYA",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6592,
+      "name": "TEACHING HOSPITAL",
+      "ref": "AC006021",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "-",
+      "street": "JAFFNA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6567,
+      "name": "THE DIRECTOR",
+      "ref": "AC005984",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "*",
+      "street": "UVA HALPEWATTA ESTATE (PVT) LIMITEDBADULLA ROAD,HELA HALPE",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6110,
+      "name": "THREE ACRE FARMS PLC",
+      "ref": "AC005181",
+      "vat": false,
+      "email": false,
+      "phone": "2497000",
+      "mobile": false,
+      "street": "NO 15, ROCK HOUSE LANE, COLOMBO 15",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "104020631-7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 7452,
+      "name": "Test 4",
+      "ref": false,
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": false,
+      "street": false,
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": false,
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": false,
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 7446,
+      "name": "Test Credit Customer",
+      "ref": false,
+      "vat": "111",
+      "email": false,
+      "phone": "+94 123 456 789",
+      "mobile": false,
+      "street": "123",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": false,
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 10,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": false,
+      "property_payment_term_id": [
+        277,
+        "45 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 7451,
+      "name": "Test Customer 2",
+      "ref": false,
+      "vat": false,
+      "email": false,
+      "phone": "+94 123 456 789",
+      "mobile": false,
+      "street": "sf sfsdf",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": false,
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": false,
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "654645",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6102,
+      "name": "ULUGALA ORGANIC FARM PVT LTD",
+      "ref": "AC004757",
+      "vat": false,
+      "email": false,
+      "phone": "0773336852",
+      "mobile": false,
+      "street": "ULUGALABOWELA, WELIMADA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6520,
+      "name": "UNION CHEMISTS (PVT) LTD",
+      "ref": "AC003771",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "777710809",
+      "street": "460, UNION PLACE,COLOMBO 2.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6133,
+      "name": "URBAN COUNCIL- HORANA",
+      "ref": "AC005603",
+      "vat": false,
+      "email": false,
+      "phone": "*",
+      "mobile": false,
+      "street": "HORANA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 3,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "111111",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6077,
+      "name": "UTHAYAN MICRO IRRIGATION SERVICES",
+      "ref": "AC002063",
+      "vat": "555",
+      "email": false,
+      "phone": false,
+      "mobile": false,
+      "street": "VAVUNIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 3,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        212,
+        "CENT-ISSUE"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6510,
+      "name": "VAVUNIYA CAMPUS",
+      "ref": "AC000916",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "767438318",
+      "street": "PARK ROADVAUNIYA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        272,
+        "10 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        220,
+        "TC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6101,
+      "name": "VIHARA FLOWER",
+      "ref": "AC004661",
+      "vat": false,
+      "email": false,
+      "phone": "077-4795569",
+      "mobile": false,
+      "street": "KANDY ROAD, UHANA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6103,
+      "name": "WATTAKGODA SPICE (PVT) LTD.,",
+      "ref": "AC004918",
+      "vat": false,
+      "email": false,
+      "phone": "077-7816171",
+      "mobile": false,
+      "street": "NO. 205, AKURESSA ROAD, HITTATIYA, MATARA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6745,
+      "name": "WAYAMBA TRADING AND INVESTMENT(PVT)LTD",
+      "ref": "AC004039",
+      "vat": false,
+      "email": false,
+      "phone": "322257365",
+      "mobile": false,
+      "street": "KULIYAPITIYA RD,WELIPENNAGAHAMULLA",
+      "street2": false,
+      "city": "KULIYAPITIYA RD,WELIPENNAGAHAMULLA",
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        276,
+        "30 Days"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        214,
+        "DLRS"
+      ],
+      "x_studio_group_type": "Dealer",
+      "x_studio_payment_method": "Credit",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": "174927146 7000",
+      "x_studio_vat_registration_status": "VAT Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6515,
+      "name": "WICKRAMATHILAKE FOOD CORPORATION (PVT) LTD",
+      "ref": "AC002692",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "778900764",
+      "street": "552, GALLE ROAD,KATUBEDDA,MORATUWA.",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6554,
+      "name": "WINAS LANKA",
+      "ref": "AC005955",
+      "vat": false,
+      "email": false,
+      "phone": false,
+      "mobile": "770137964",
+      "street": "NARAMMALA KURUNEGALA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 1,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    },
+    {
+      "id": 6104,
+      "name": "WORLD VISION",
+      "ref": "AC004936",
+      "vat": false,
+      "email": false,
+      "phone": "-",
+      "mobile": false,
+      "street": "JAFFNA",
+      "street2": false,
+      "city": false,
+      "zip": false,
+      "state_id": false,
+      "country_id": [
+        129,
+        "Sri Lanka"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "customer_rank": 2,
+      "supplier_rank": 0,
+      "is_company": true,
+      "property_account_receivable_id": [
+        4335,
+        "12020010 DEBTORS LEDGER CONTROL - TRADE"
+      ],
+      "property_account_payable_id": [
+        4374,
+        "22010010 CREDITORS CONTROL - TRADE"
+      ],
+      "property_payment_term_id": [
+        268,
+        "Immediate Payment"
+      ],
+      "property_supplier_payment_term_id": false,
+      "property_product_pricelist": [
+        29,
+        "JAM General Pricelist (LKR)"
+      ],
+      "x_studio_address": false,
+      "x_studio_customer_group": [
+        211,
+        "CAC"
+      ],
+      "x_studio_group_type": "General",
+      "x_studio_payment_method": "Cash",
+      "x_studio_svat_registration_number": false,
+      "x_studio_svat_registration_status": "SVAT Nor Registered",
+      "x_studio_vat_registered": false,
+      "x_studio_vat_registration_number": false,
+      "x_studio_vat_registration_status": "VAT Not Registered",
+      "x_studio_vat_exempted_number": false,
+      "x_studio_vendor_group": false,
+      "x_studio_mandatory_bank_guarantee": false
+    }
+  ],
+  "payment_terms": [
+    {
+      "id": 268,
+      "name": "Immediate Payment",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        272
+      ],
+      "note": false,
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    },
+    {
+      "id": 272,
+      "name": "10 Days",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        276
+      ],
+      "note": false,
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    },
+    {
+      "id": 273,
+      "name": "14 Days",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        277
+      ],
+      "note": false,
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    },
+    {
+      "id": 276,
+      "name": "30 Days",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        280
+      ],
+      "note": "<p><br></p>",
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    },
+    {
+      "id": 277,
+      "name": "45 Days",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        281
+      ],
+      "note": false,
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    },
+    {
+      "id": 278,
+      "name": "60 Days",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        282
+      ],
+      "note": false,
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    },
+    {
+      "id": 279,
+      "name": "90 Days",
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "line_ids": [
+        283
+      ],
+      "note": false,
+      "active": true,
+      "sequence": 10,
+      "early_pay_discount_computation": "included",
+      "early_discount": false
+    }
+  ],
+  "payment_term_lines": [],
+  "pricelists": [
+    {
+      "id": 29,
+      "name": "JAM General Pricelist",
+      "currency_id": [
+        145,
+        "LKR"
+      ],
+      "company_id": [
+        2,
+        "Jinasena Agricultural Machinery (Pvt) Ltd."
+      ],
+      "active": true,
+      "sequence": 16,
+      "discount_policy": "with_discount",
+      "x_studio_group_type": "General",
+      "x_studio_order_payment_method": "Cash",
+      "x_studio_project_price_list": false,
+      "x_studio_zzzz": false
+    }
+  ]
+}

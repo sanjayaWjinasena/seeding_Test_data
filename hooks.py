@@ -34,6 +34,9 @@ SEED_PATH = os.path.join(
 HELPDESK_SEED_PATH = os.path.join(
     os.path.dirname(__file__), 'data', 'helpdesk_scaffold_seed.json'
 )
+CUSTOMER_SEED_PATH = os.path.join(
+    os.path.dirname(__file__), 'data', 'customer_scaffold_seed.json'
+)
 # The source-of-truth company name (Clear-DB Company 2). We match by
 # name against the dev env's res.company so the seed lands on the
 # right legal entity regardless of ID differences.
@@ -117,7 +120,215 @@ def seed_accounting_scaffold(env):
     _seed_helpdesk_scaffold(env, company)
     # v0.0.5: reset x_studio_company_id on repair-pipeline stages.
     _reset_repair_stages_company(env)
+    # v0.0.6: seed customers + payment terms + pricelists.
+    _seed_customer_scaffold(env, company)
     _logger.info('seeding_test_data: seed complete on company %s', company.name)
+
+
+def _seed_customer_scaffold(env, company):
+    """v0.0.6: seed 99 Jinasena AM customers + their payment terms +
+    referenced pricelists from Clear-DB. Match strategy: skip existing
+    partners by name to avoid clobbering dev-env test artifacts (e.g.
+    Acme Corporation used by SO 81).
+
+    Reference resolution:
+      * property_account_receivable_id -> by account.code
+      * property_payment_term_id -> by term.name
+      * property_product_pricelist -> by pricelist.name
+      * x_studio_customer_group -> by group.x_name (studio_usermodel_migration)
+      * country_id / state_id -> by name (skip if not found)
+    """
+    if not os.path.isfile(CUSTOMER_SEED_PATH):
+        _logger.info(
+            'seeding_test_data: customer seed file not present -- skipping'
+        )
+        return
+    with open(CUSTOMER_SEED_PATH, encoding='utf-8') as fh:
+        snapshot = json.load(fh)
+
+    # 1. Payment terms (create-if-missing, match by name)
+    Term = env['account.payment.term'].sudo()
+    term_name_to_id = {}
+    for row in snapshot.get('payment_terms') or []:
+        name = row.get('name')
+        if not name:
+            continue
+        existing = Term.search([('name', '=', name)], limit=1)
+        if existing:
+            term_name_to_id[name] = existing.id
+            continue
+        with env.cr.savepoint():
+            try:
+                new = Term.create({
+                    'name': name,
+                    'active': bool(row.get('active', True)),
+                    'sequence': row.get('sequence') or 10,
+                    'note': row.get('note') or '',
+                })
+                term_name_to_id[name] = new.id
+                _logger.info(
+                    'seeding_test_data: created payment term %r (id %d)',
+                    name, new.id,
+                )
+            except Exception as e:
+                _logger.warning(
+                    'seeding_test_data: skip payment term %r -- %s',
+                    name, e,
+                )
+
+    # 2. Pricelists (create-if-missing, match by name).
+    Pricelist = env['product.pricelist'].sudo()
+    pricelist_name_to_id = {}
+    for row in snapshot.get('pricelists') or []:
+        name = row.get('name')
+        if not name:
+            continue
+        existing = Pricelist.search([('name', '=', name)], limit=1)
+        if existing:
+            pricelist_name_to_id[name] = existing.id
+            continue
+        with env.cr.savepoint():
+            try:
+                vals = {
+                    'name': name,
+                    'active': bool(row.get('active', True)),
+                    'sequence': row.get('sequence') or 10,
+                    'discount_policy': row.get('discount_policy') or 'with_discount',
+                }
+                # currency_id is [id, name]
+                cur = row.get('currency_id')
+                if isinstance(cur, list):
+                    curr = env['res.currency'].search(
+                        [('name', '=', cur[1])], limit=1
+                    )
+                    if curr:
+                        vals['currency_id'] = curr.id
+                # x_studio_ pricelist fields (BugFix-Sales v46+)
+                for k in ('x_studio_group_type', 'x_studio_order_payment_method',
+                          'x_studio_project_price_list', 'x_studio_zzzz'):
+                    if k in row and k in Pricelist._fields:
+                        vals[k] = row[k]
+                new = Pricelist.create(vals)
+                pricelist_name_to_id[name] = new.id
+                _logger.info(
+                    'seeding_test_data: created pricelist %r (id %d)',
+                    name, new.id,
+                )
+            except Exception as e:
+                _logger.warning(
+                    'seeding_test_data: skip pricelist %r -- %s', name, e,
+                )
+
+    # 3. Customer groups already seeded by studio_usermodel_migration.
+    # Build a name -> id lookup for reference resolution.
+    group_x_name_to_id = {}
+    if 'x_customer_group' in env.registry:
+        Group = env['x_customer_group'].sudo()
+        for g in Group.search([]):
+            key = getattr(g, 'x_name', None) or g.display_name
+            if key:
+                group_x_name_to_id[key] = g.id
+
+    # 4. Account code -> id lookup for property_account_receivable_id
+    account_code_to_id = {}
+    for a in env['account.account'].sudo().search(
+        [('company_id', '=', company.id)]
+    ):
+        account_code_to_id[a.code] = a.id
+
+    # 5. Country / state lookup helpers
+    def _resolve_ref(ref, model, field='name'):
+        if not isinstance(ref, list) or len(ref) < 2:
+            return False
+        name = ref[1]
+        rec = env[model].sudo().search([(field, '=', name)], limit=1)
+        return rec.id if rec else False
+
+    # 6. Customers (skip existing by name)
+    Partner = env['res.partner'].sudo()
+    created_c = skipped_c = 0
+    for row in snapshot.get('customers') or []:
+        name = row.get('name')
+        if not name:
+            continue
+        existing = Partner.search([('name', '=', name)], limit=1)
+        if existing:
+            skipped_c += 1
+            continue
+        with env.cr.savepoint():
+            try:
+                vals = {
+                    'name': name,
+                    'is_company': bool(row.get('is_company', True)),
+                    'customer_rank': row.get('customer_rank') or 1,
+                    'supplier_rank': row.get('supplier_rank') or 0,
+                    'company_id': company.id,
+                }
+                for k in ('ref', 'vat', 'email', 'phone', 'mobile',
+                          'street', 'street2', 'city', 'zip'):
+                    if row.get(k):
+                        vals[k] = row[k]
+                # country / state
+                if row.get('country_id'):
+                    cid = _resolve_ref(row['country_id'], 'res.country')
+                    if cid:
+                        vals['country_id'] = cid
+                if row.get('state_id'):
+                    sid = _resolve_ref(row['state_id'], 'res.country.state')
+                    if sid:
+                        vals['state_id'] = sid
+                # Property fields
+                rec_acc_ref = row.get('property_account_receivable_id')
+                if isinstance(rec_acc_ref, list) and len(rec_acc_ref) >= 2:
+                    code = (rec_acc_ref[1] or '').split(' ', 1)[0]
+                    aid = account_code_to_id.get(code)
+                    if aid:
+                        vals['property_account_receivable_id'] = aid
+                pay_acc_ref = row.get('property_account_payable_id')
+                if isinstance(pay_acc_ref, list) and len(pay_acc_ref) >= 2:
+                    code = (pay_acc_ref[1] or '').split(' ', 1)[0]
+                    aid = account_code_to_id.get(code)
+                    if aid:
+                        vals['property_account_payable_id'] = aid
+                term_ref = row.get('property_payment_term_id')
+                if isinstance(term_ref, list) and len(term_ref) >= 2:
+                    tid = term_name_to_id.get(term_ref[1])
+                    if tid:
+                        vals['property_payment_term_id'] = tid
+                pl_ref = row.get('property_product_pricelist')
+                if isinstance(pl_ref, list) and len(pl_ref) >= 2:
+                    plid = pricelist_name_to_id.get(pl_ref[1])
+                    if plid:
+                        vals['property_product_pricelist'] = plid
+                # Studio fields on partner
+                for k in ('x_studio_address',
+                          'x_studio_svat_registration_number',
+                          'x_studio_svat_registration_status',
+                          'x_studio_vat_registered',
+                          'x_studio_vat_registration_number',
+                          'x_studio_vat_registration_status',
+                          'x_studio_vat_exempted_number',
+                          'x_studio_mandatory_bank_guarantee',
+                          'x_studio_group_type',
+                          'x_studio_payment_method'):
+                    if k in row and k in Partner._fields:
+                        vals[k] = row[k] if row[k] is not False else False
+                # x_studio_customer_group reference resolution
+                cg_ref = row.get('x_studio_customer_group')
+                if isinstance(cg_ref, list) and len(cg_ref) >= 2:
+                    gid = group_x_name_to_id.get(cg_ref[1])
+                    if gid and 'x_studio_customer_group' in Partner._fields:
+                        vals['x_studio_customer_group'] = gid
+                Partner.create(vals)
+                created_c += 1
+            except Exception as e:
+                _logger.warning(
+                    'seeding_test_data: skip customer %r -- %s', name, e,
+                )
+    _logger.info(
+        'seeding_test_data: customers -- created %d, skipped-existing %d',
+        created_c, skipped_c,
+    )
 
 
 def _reset_repair_stages_company(env):
