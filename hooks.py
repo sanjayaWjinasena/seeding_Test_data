@@ -85,6 +85,8 @@ def seed_accounting_scaffold(env):
         )
         # v0.0.4: still seed helpdesk (its own idempotency guard runs)
         _seed_helpdesk_scaffold(env, company)
+        # v0.0.5: also reset repair-stage company (idempotent)
+        _reset_repair_stages_company(env)
         return
     if existing:
         _logger.warning(
@@ -113,7 +115,82 @@ def seed_accounting_scaffold(env):
     # accounting even when accounting was skipped -- guarded from
     # within by its own idempotency check.
     _seed_helpdesk_scaffold(env, company)
+    # v0.0.5: reset x_studio_company_id on repair-pipeline stages.
+    _reset_repair_stages_company(env)
     _logger.info('seeding_test_data: seed complete on company %s', company.name)
+
+
+def _reset_repair_stages_company(env):
+    """v0.0.5: Fix-repair's Studio-ported ticket-form view #7219 adds
+    a domain filter on stage_id:
+
+        [('team_ids', 'in', [team_id]), '|',
+         ('x_studio_company_id', '=', company_id),
+         ('x_studio_company_id', '=', False)]
+
+    If a repair-pipeline stage has x_studio_company_id set to Company 1
+    (the initial 'My Company (San Francisco)' Odoo default), it's
+    filtered out of the statusbar for every other company -- users see
+    only the 5 base helpdesk stages.
+
+    Fix-repair's data/repair_stages.xml intentionally leaves the field
+    unset (defaults to False, matching for all companies). But on a
+    fresh dev env, Odoo's install defaults may have set it to Company
+    1. Clear it here so the widget shows all 12 repair stages.
+
+    Idempotent: no-op when the stage's x_studio_company_id is already
+    False (batch write short-circuits the actual DB update).
+    """
+    Stage = env['helpdesk.stage'].sudo()
+    # Find the 12 Fix-repair repair-pipeline stages by their xmlid.
+    # Use module='Fix-repair' + xml_id fragment so stages seeded by
+    # data/repair_stages.xml are targeted; base helpdesk stages
+    # (New, In Progress, ...) are untouched.
+    if 'x_studio_company_id' not in Stage._fields:
+        _logger.info(
+            'seeding_test_data: helpdesk.stage.x_studio_company_id '
+            'not declared -- skipping stage-company reset (Fix-repair '
+            'v276+ required).'
+        )
+        return
+    repair_stages = env.ref('Fix-repair.stage_sent_to_factory',
+                            raise_if_not_found=False)
+    xmlids = (
+        'stage_sent_to_factory',
+        'stage_received_at_factory',
+        'stage_diagnosis',
+        'stage_estimation_sent_to_customer',
+        'stage_estimation_approval_received',
+        'stage_advance_received',
+        'stage_repair_started',
+        'stage_repair_completed',
+        'stage_sent_to_sales_centre',
+        'stage_received_at_sales_centre',
+        'stage_handed_over_to_customer',
+        'stage_cancelled',
+    )
+    stages = Stage
+    for xmlid in xmlids:
+        rec = env.ref('Fix-repair.%s' % xmlid, raise_if_not_found=False)
+        if rec:
+            stages |= rec
+    to_reset = stages.filtered(lambda s: s.x_studio_company_id)
+    if to_reset:
+        try:
+            to_reset.write({'x_studio_company_id': False})
+            _logger.info(
+                'seeding_test_data: cleared x_studio_company_id on '
+                '%d repair-pipeline stage(s)', len(to_reset),
+            )
+        except Exception as e:
+            _logger.warning(
+                'seeding_test_data: stage-company reset failed -- %s', e,
+            )
+    else:
+        _logger.info(
+            'seeding_test_data: no repair-pipeline stages need '
+            'x_studio_company_id reset (idempotent skip).'
+        )
 
 
 def _seed_helpdesk_scaffold(env, company):
