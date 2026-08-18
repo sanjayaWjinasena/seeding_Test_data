@@ -142,13 +142,25 @@ def _seed_customer_scaffold(env, company):
       * x_studio_customer_group -> by group.x_name (studio_usermodel_migration)
       * country_id / state_id -> by name (skip if not found)
     """
+    _logger.info(
+        'seeding_test_data v0.0.9: _seed_customer_scaffold ENTRY -- '
+        'company=%s (id=%d), seed_path=%s',
+        company.name, company.id, CUSTOMER_SEED_PATH,
+    )
     if not os.path.isfile(CUSTOMER_SEED_PATH):
-        _logger.info(
+        _logger.warning(
             'seeding_test_data: customer seed file not present -- skipping'
         )
         return
     with open(CUSTOMER_SEED_PATH, encoding='utf-8') as fh:
         snapshot = json.load(fh)
+    _logger.info(
+        'seeding_test_data v0.0.9: snapshot -- terms=%d pricelists=%d '
+        'customers=%d',
+        len(snapshot.get('payment_terms') or []),
+        len(snapshot.get('pricelists') or []),
+        len(snapshot.get('customers') or []),
+    )
 
     # 1. Payment terms (create-if-missing, match by name)
     Term = env['account.payment.term'].sudo()
@@ -256,6 +268,13 @@ def _seed_customer_scaffold(env, company):
         rec = env[model].sudo().search([(field, '=', name)], limit=1)
         return rec.id if rec else False
 
+    _logger.info(
+        'seeding_test_data v0.0.9: resolver maps built -- '
+        'terms=%d pricelists=%d groups=%d account_codes=%d',
+        len(term_name_to_id), len(pricelist_name_to_id),
+        len(group_x_name_to_id), len(account_code_to_id),
+    )
+
     # 6. Customers: create net-new OR back-fill missing fields on
     # customers that already exist by name. v0.0.6 hit a bug where
     # Odoo's `create()` silently dropped several property + Studio
@@ -349,12 +368,20 @@ def _seed_customer_scaffold(env, company):
         return v
 
     created_c = backfilled_c = unchanged_c = 0
+    errors_c = 0
+    sample_logged = False
     for row in snapshot.get('customers') or []:
         name = row.get('name')
         if not name:
             continue
         existing = Partner.search([('name', '=', name)], limit=1)
         cfg = _build_config_vals(row)
+        if not sample_logged:
+            _logger.info(
+                'seeding_test_data v0.0.9: sample cfg for %r -- keys=%r',
+                name, sorted(cfg.keys()),
+            )
+            sample_logged = True
         with env.cr.savepoint():
             try:
                 if existing:
@@ -398,13 +425,15 @@ def _seed_customer_scaffold(env, company):
                                 'for %r -- %s', name, e2,
                             )
             except Exception as e:
+                errors_c += 1
                 _logger.warning(
                     'seeding_test_data: skip/backfill customer %r -- %s',
                     name, e,
                 )
     _logger.info(
-        'seeding_test_data: customers -- created %d, back-filled %d, '
-        'unchanged %d', created_c, backfilled_c, unchanged_c,
+        'seeding_test_data v0.0.9: customers -- created=%d backfilled=%d '
+        'unchanged=%d errors=%d', created_c, backfilled_c, unchanged_c,
+        errors_c,
     )
 
 
