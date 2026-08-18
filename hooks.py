@@ -34,6 +34,9 @@ SEED_PATH = os.path.join(
 HELPDESK_SEED_PATH = os.path.join(
     os.path.dirname(__file__), 'data', 'helpdesk_scaffold_seed.json'
 )
+CUSTOMER_SEED_PATH = os.path.join(
+    os.path.dirname(__file__), 'data', 'customer_scaffold_seed.json'
+)
 # The source-of-truth company name (Clear-DB Company 2). We match by
 # name against the dev env's res.company so the seed lands on the
 # right legal entity regardless of ID differences.
@@ -43,24 +46,22 @@ TARGET_COMPANY_NAME = 'Jinasena Agricultural Machinery (Pvt) Ltd.'
 def seed_accounting_scaffold(env):
     """Entry point registered as post_init_hook.
 
-    v0.0.13: scope reduced to static reference data ONLY. Customer
-    seeding was removed from this hook -- customer data (99 partners
-    with property_* + Studio fields) is now imported by the
-    standalone `scripts/import_customers_to_dev.py` script.
+    v0.0.14: customer seed brought back into the module. Testing
+    infrastructure should be reproducible via `Apps -> Upgrade`,
+    not an out-of-band script. The v0.0.12 fix that solved the
+    ir.property scope bug is now proven:
+      * Partner.with_company(company) puts every write in the
+        target company's scope so property_* fields land there.
+      * OVERRIDE_KEYS force-writes property fields regardless of
+        current DB value (Odoo backfills them to env defaults at
+        partner create, so "already set" is not user intent).
 
-    Why: property_account_receivable_id / property_payment_term_id /
-    property_product_pricelist are ir.property fields (company-
-    scoped). Writing them from a post_init_hook (SUPERUSER, no
-    active company) lands values in the wrong scope. An external
-    script with explicit company context sidesteps that entire
-    class of bug. Module hooks stay responsible for schema +
-    minimal static reference data; the script owns real business
-    data.
-
-    What this hook still does:
+    What this hook does:
       * Accounting scaffold (243 accounts + 49 journals)
       * Helpdesk team + members
       * Reset x_studio_company_id on repair-pipeline stages
+      * Customer scaffold (99 partners + payment terms + pricelist
+        + all property_* + Studio fields, resolved by name/code)
     """
     Company = env['res.company'].sudo()
     company = Company.search([('name', '=', TARGET_COMPANY_NAME)], limit=1)
@@ -79,6 +80,7 @@ def seed_accounting_scaffold(env):
         )
         _seed_helpdesk_scaffold(env, company)
         _reset_repair_stages_company(env)
+        _seed_customer_scaffold(env, company)
         return
     with open(SEED_PATH, encoding='utf-8') as fh:
         snapshot = json.load(fh)
@@ -95,6 +97,7 @@ def seed_accounting_scaffold(env):
         )
         _seed_helpdesk_scaffold(env, company)
         _reset_repair_stages_company(env)
+        _seed_customer_scaffold(env, company)
         return
     if existing:
         _logger.warning(
@@ -121,7 +124,300 @@ def seed_accounting_scaffold(env):
     )
     _seed_helpdesk_scaffold(env, company)
     _reset_repair_stages_company(env)
+    _seed_customer_scaffold(env, company)
     _logger.info('seeding_test_data: seed complete on company %s', company.name)
+
+
+def _seed_customer_scaffold(env, company):
+    """Seed 99 Jinasena AM customers + their payment terms + referenced
+    pricelists from the Clear-DB snapshot.
+
+    Match strategy: partner by name, term by name, pricelist by name,
+    x_customer_group by x_name, account by code.
+
+    ir.property scope (v0.0.12+):
+      Every partner op runs through Partner.with_company(company) so
+      the 5 property_* fields land in the target company's scope.
+      SUPERUSER without an active company otherwise stores them in
+      the wrong scope; reads from company_id=7 then return blank.
+
+    Backfill policy:
+      * OVERRIDE_KEYS (the 5 property_* fields): always take source
+        value -- Odoo backfills them to env defaults at partner
+        create, so "already set" is not user intent.
+      * All other keys: only write when current value is empty
+        (never clobber a manually set value).
+    """
+    Param = env['ir.config_parameter'].sudo()
+    diag = []
+    def _record(msg):
+        diag.append(msg)
+        _logger.info('seeding_test_data v0.0.14: %s', msg)
+        Param.set_param('seeding_test_data.diag', '\n'.join(diag[-200:]))
+
+    _record('ENTRY company=%s (id=%d) seed_path=%s' %
+            (company.name, company.id, CUSTOMER_SEED_PATH))
+    if not os.path.isfile(CUSTOMER_SEED_PATH):
+        _record('FAIL customer seed file not present')
+        return
+    with open(CUSTOMER_SEED_PATH, encoding='utf-8') as fh:
+        snapshot = json.load(fh)
+    _record('snapshot terms=%d pricelists=%d customers=%d' % (
+        len(snapshot.get('payment_terms') or []),
+        len(snapshot.get('pricelists') or []),
+        len(snapshot.get('customers') or []),
+    ))
+
+    # 1. Payment terms (create-if-missing, match by name)
+    Term = env['account.payment.term'].sudo()
+    term_name_to_id = {}
+    for row in snapshot.get('payment_terms') or []:
+        name = row.get('name')
+        if not name:
+            continue
+        existing = Term.search([('name', '=', name)], limit=1)
+        if existing:
+            term_name_to_id[name] = existing.id
+            continue
+        with env.cr.savepoint():
+            try:
+                new = Term.create({
+                    'name': name,
+                    'active': bool(row.get('active', True)),
+                    'sequence': row.get('sequence') or 10,
+                    'note': row.get('note') or '',
+                })
+                term_name_to_id[name] = new.id
+            except Exception as e:
+                _logger.warning(
+                    'seeding_test_data: skip payment term %r -- %s', name, e,
+                )
+
+    # 2. Pricelists (create-if-missing, match by name). Register the
+    # currency-suffixed display_name variant too so customer refs
+    # (which carry '<name> (<currency>)') resolve.
+    Pricelist = env['product.pricelist'].sudo()
+    pricelist_name_to_id = {}
+
+    def _register_pricelist(pl_id, name, currency_code):
+        pricelist_name_to_id[name] = pl_id
+        if currency_code:
+            pricelist_name_to_id['%s (%s)' % (name, currency_code)] = pl_id
+
+    for row in snapshot.get('pricelists') or []:
+        name = row.get('name')
+        if not name:
+            continue
+        cur = row.get('currency_id')
+        curr_code = cur[1] if isinstance(cur, list) and len(cur) > 1 else None
+        existing = Pricelist.search([('name', '=', name)], limit=1)
+        if existing:
+            _register_pricelist(existing.id, name, curr_code)
+            continue
+        with env.cr.savepoint():
+            try:
+                vals = {
+                    'name': name,
+                    'active': bool(row.get('active', True)),
+                    'sequence': row.get('sequence') or 10,
+                    'discount_policy': row.get('discount_policy') or 'with_discount',
+                }
+                if curr_code:
+                    curr = env['res.currency'].search(
+                        [('name', '=', curr_code)], limit=1)
+                    if curr:
+                        vals['currency_id'] = curr.id
+                # Studio-ported pricelist fields (BugFix-Sales v46+)
+                for k in ('x_studio_group_type', 'x_studio_order_payment_method',
+                          'x_studio_project_price_list', 'x_studio_zzzz'):
+                    if k in row and k in Pricelist._fields:
+                        vals[k] = row[k]
+                new = Pricelist.create(vals)
+                _register_pricelist(new.id, name, curr_code)
+            except Exception as e:
+                _logger.warning(
+                    'seeding_test_data: skip pricelist %r -- %s', name, e,
+                )
+
+    # 3. Customer groups already seeded by studio_usermodel_migration.
+    # Build a name -> id lookup for reference resolution.
+    group_x_name_to_id = {}
+    if 'x_customer_group' in env.registry:
+        Group = env['x_customer_group'].sudo()
+        for g in Group.search([]):
+            key = getattr(g, 'x_name', None) or g.display_name
+            if key:
+                group_x_name_to_id[key] = g.id
+
+    # 4. Vendor groups (same pattern)
+    vgroup_x_name_to_id = {}
+    if 'x_vendor_group' in env.registry:
+        VGroup = env['x_vendor_group'].sudo()
+        for g in VGroup.search([]):
+            key = getattr(g, 'x_name', None) or g.display_name
+            if key:
+                vgroup_x_name_to_id[key] = g.id
+
+    # 5. Account code -> id lookup for property_account_*_id
+    account_code_to_id = {}
+    for a in env['account.account'].sudo().search(
+        [('company_id', '=', company.id)]
+    ):
+        account_code_to_id[a.code] = a.id
+
+    _record('resolvers terms=%d pricelists=%d cust_groups=%d vend_groups=%d '
+            'accounts=%d' % (
+        len(term_name_to_id), len(pricelist_name_to_id),
+        len(group_x_name_to_id), len(vgroup_x_name_to_id),
+        len(account_code_to_id),
+    ))
+
+    # 6. Customers: create or backfill.
+    Partner = env['res.partner'].sudo()
+
+    # Field-name-agnostic reference resolvers. Adding a new Studio
+    # m2o that points to one of these models "just works" -- no code
+    # change needed. Fall back to generic search-by-display-name for
+    # relations not listed here.
+    RELATION_RESOLVERS = {
+        'account.account': lambda ref: account_code_to_id.get(
+            (ref[1] or '').split(' ', 1)[0]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'account.payment.term': lambda ref: term_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'product.pricelist': lambda ref: pricelist_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'x_customer_group': lambda ref: group_x_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+        'x_vendor_group': lambda ref: vgroup_x_name_to_id.get(
+            ref[1]) if isinstance(ref, list) and len(ref) >= 2 else False,
+    }
+
+    SKIP_FIELDS = frozenset((
+        'id', 'display_name',
+        'create_uid', 'create_date',
+        'write_uid', 'write_date',
+        '__last_update',
+        'company_id',        # caller sets from target company
+        'company_ids',       # multi-company: leave env default
+        'parent_id',
+    ))
+
+    def _resolve_relation(field, ref):
+        relation = field.comodel_name
+        resolver = RELATION_RESOLVERS.get(relation)
+        if resolver:
+            return resolver(ref)
+        # Generic fallback: match by display_name.
+        if isinstance(ref, list) and len(ref) >= 2 and ref[1]:
+            rec = env[relation].sudo().search(
+                [('display_name', '=', ref[1])], limit=1)
+            return rec.id if rec else False
+        return False
+
+    def _build_config_vals(row):
+        """Data-driven mapping of snapshot row -> target-env vals.
+        Iterates every key, honours Partner._fields schema, skips
+        anything we can't safely write. New Studio fields on
+        Clear-DB flow through without code changes."""
+        v = {}
+        for key, source_val in row.items():
+            if key in SKIP_FIELDS:
+                continue
+            field = Partner._fields.get(key)
+            if field is None:
+                continue
+            if source_val in (False, None, ''):
+                continue
+            ftype = field.type
+            if ftype == 'many2one':
+                rid = _resolve_relation(field, source_val)
+                if rid:
+                    v[key] = rid
+            elif ftype in ('char', 'text', 'html', 'selection',
+                           'integer', 'float', 'monetary',
+                           'boolean', 'date', 'datetime'):
+                v[key] = source_val
+            # x2many / binary / reference: skip conservatively
+        return v
+
+    # v0.0.12+ fix: bind every partner op to the target company's
+    # context so property_* (ir.property) writes land in the right
+    # scope.
+    PartnerC = Partner.with_company(company)
+
+    # ir.property fields are always overridden from source-of-truth
+    # on backfill -- Odoo backfills them to env defaults at partner
+    # create, so a non-empty DB value is not user intent.
+    OVERRIDE_KEYS = frozenset((
+        'property_product_pricelist',
+        'property_account_receivable_id',
+        'property_account_payable_id',
+        'property_payment_term_id',
+        'property_supplier_payment_term_id',
+    ))
+
+    created_c = backfilled_c = unchanged_c = errors_c = 0
+    sample_logged = False
+    for row in snapshot.get('customers') or []:
+        name = row.get('name')
+        if not name:
+            continue
+        existing = PartnerC.search([('name', '=', name)], limit=1)
+        cfg = _build_config_vals(row)
+        if not sample_logged:
+            _record('sample cfg for %r keys=%r existing_id=%s' %
+                    (name, sorted(cfg.keys()),
+                     existing.id if existing else None))
+            sample_logged = True
+        with env.cr.savepoint():
+            try:
+                if existing:
+                    to_write = {}
+                    current = existing.read(list(cfg.keys()))[0] if cfg else {}
+                    for k, v in cfg.items():
+                        if k in OVERRIDE_KEYS:
+                            to_write[k] = v
+                            continue
+                        cur = current.get(k)
+                        cur_id = cur[0] if isinstance(cur, list) else cur
+                        if not cur_id:
+                            to_write[k] = v
+                    if to_write:
+                        existing.write(to_write)
+                        backfilled_c += 1
+                    else:
+                        unchanged_c += 1
+                else:
+                    vals = dict(cfg)
+                    vals.update({
+                        'name': name,
+                        'is_company': bool(row.get('is_company', True)),
+                        'customer_rank': row.get('customer_rank') or 1,
+                        'supplier_rank': row.get('supplier_rank') or 0,
+                        'company_id': company.id,
+                    })
+                    PartnerC.create(vals)
+                    created_c += 1
+                    # Post-create write locks in property + Studio values
+                    # (Odoo create() sometimes drops property fields).
+                    new = PartnerC.search([('name', '=', name)], limit=1)
+                    if new and cfg:
+                        try:
+                            new.write(cfg)
+                        except Exception as e2:
+                            _logger.warning(
+                                'seeding_test_data: post-create write '
+                                'for %r -- %s', name, e2,
+                            )
+            except Exception as e:
+                errors_c += 1
+                _logger.warning(
+                    'seeding_test_data: skip/backfill customer %r -- %s',
+                    name, e,
+                )
+    _record('DONE created=%d backfilled=%d unchanged=%d errors=%d' % (
+        created_c, backfilled_c, unchanged_c, errors_c,
+    ))
 
 
 def _reset_repair_stages_company(env):

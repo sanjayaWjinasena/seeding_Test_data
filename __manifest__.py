@@ -1,24 +1,28 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Seeding - Test Data',
-    'version': '17.0.0.0.13',
-    # v0.0.13: scope reduced. Customer seeding moved to the standalone
-    # scripts/import_customers_to_dev.py script (property_* fields are
-    # ir.property, company-scoped, and don't write cleanly from a
-    # post_init_hook running as SUPERUSER without an active company).
+    'version': '17.0.0.0.14',
+    # v0.0.14: customer seed lives in this module again. Testing
+    # infrastructure should be reproducible via Apps -> Upgrade,
+    # not an out-of-band script. The ir.property scope bug that
+    # motivated the v0.0.13 removal is fixed by v0.0.12's
+    # Partner.with_company(company) + OVERRIDE_KEYS combo.
     #
-    # Fix-repair stays as a dep because _reset_repair_stages_company
-    # references helpdesk.stage.x_studio_company_id (declared by
-    # Fix-repair v276+) and env.ref('Fix-repair.stage_*').
+    # Load-order deps: without these three, res.partner._fields
+    # wouldn't contain the x_studio_* fields at hook time (this
+    # module gets loaded at ~507/771 in the graph; sisters load
+    # later unless we depend on them).
     'depends': [
         'account', 'sale', 'stock', 'helpdesk',
         'Fix-repair',
+        'BugFix-Sales',
+        'studio_usermodel_migration',
     ],
     'summary': (
-        'Seeds minimum static reference data (accounting scaffold + '
-        'helpdesk team + repair stage company reset) from Clear-DB '
-        'reference. Customer data is loaded separately via '
-        'scripts/import_customers_to_dev.py.'
+        'Seeds accounting scaffold + helpdesk team + repair stage '
+        'company reset + 99 Jinasena AM customers with their '
+        'property_* and Studio fields from the Clear-DB reference '
+        'snapshot.'
     ),
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Accounting',
